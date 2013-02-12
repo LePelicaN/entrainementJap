@@ -1,0 +1,544 @@
+﻿	Hiragana
+!voyelles
+?x
+あ:a;い:i;う:u;え:e;お:o
+!k
+?o
+か:ka;き:ki;く:ku;け:ke;こ:ko
+!s
+?o
+さ:sa;し:shi;す:su;せ:se;そ:so
+!t
+?o
+た:ta;ち:chi;つ:tsu;て:te;と:to
+!n
+?o
+な:na;に:ni;ぬ:nu;ね:ne;の:no
+!h
+?o
+は:ha;ひ:hi;ふ:fu;へ:he;ほ:ho
+!m
+?o
+ま:ma;み:mi;む:mu;め:me;も:mo
+!y
+?o
+や:ya;ゆ:yu;よ:yo
+!r
+?o
+ら:ra;り:ri;る:ru;れ:re;ろ:ro
+!w
+?o
+わ:wa;を:wo
+!-n
+?o
+ん:n
+!g
+?o
+が:ga;ぎ:gi;ぐ:gu;げ:ge;ご:go
+!z
+?o
+ざ:za;じ:ji;ず:zu;ぜ:ze;ぞ:zo
+!d
+?o
+だ:da;ぢ:ji;づ:zu;で:de;ど:do
+!b
+?o
+ば:ba;び:bi;ぶ:bu;べ:be;ぼ:bo
+!p
+?o
+ぱ:pa;ぴ:pi;ぷ:pu;ぺ:pe;ぽ:po
+
+	Katakana
+!voyelles
+?x
+ア:a;イ:i;ウ:u;エ:e;オ:o
+!k
+?o
+カ:ka;キ:ki;ク:ku;ケ:ke;コ:ko
+!s
+?o
+サ:sa;シ:shi;ス:su;セ:se;ソ:so
+!t
+?o
+タ:ta;チ:chi;ツ:tsu;テ:te;ト:to
+!n
+?o
+ナ:na;ニ:ni;ヌ:nu;ネ:ne;ノ:no
+!h
+?o
+ハ:ha;ヒ:hi;フ:fu;ヘ:he;ホ:ho
+!m
+?o
+マ:ma;ミ:mi;ム:mu;メ:me;モ:mo
+!y
+?o
+ヤ:ya;ユ:yu;ヨ:yo
+!r
+?o
+ラ:ra;リ:ri;ル:ru;レ:re;ロ:ro
+!w
+?o
+ワ:wa;ヲ:wo
+!-n
+?o
+ン:n
+!g
+?o
+ガ:ga;ギ:gi;グ:gu;ゲ:ge;ゴ:go
+!z
+?o
+ザ:za;ジ:ji;ズ:zu;ゼ:ze;ゾ:zo
+!d
+?o
+ダ:da;ヂ:ji;ヅ:zu;デ:de;ド:do
+!b
+?o
+バ:ba;ビ:bi;ブ:bu;ベ:be;ボ:bo
+!p
+?o
+パ:pa;ピ:pi;プ:pu;ペ:pe;ポ:po
+
+	Mot
+#
+#
+!Divers
+?o
+が:ga:(marqueur de sujet)
+-くない:-kunai:négation adj en i
+-かった:-katta:passé adj en i
+-くなかった:-kunakatta:négation passé adj en i
+-くて:-kute:premier adj en i
+そうして:soushite:ensuite
+にん:nin:homme, personne
+のこり:nokori:reste
+にんずう:ninzuu:nombre de personnes
+あかい:akai:rouge
+#
+!Manga
+?o
+にん:nin:homme, personne
+のこり:nokori:reste
+にんずう:ninzuu:nombre de personnes
+あかい:akai:rouge
+#
+!Test
+?o
+にん:nin:homme, personne
+なに:nani:que, quel, quoi
+あかい:akai:rouge
+-かった:-katta:passé adj en i
+はん:han:demi, et demie, moitié
+#
+!Leçon 01
+?o
+わたし:watashi:je
+です:desu:être
+さん:san:Mr
+ほん:hon:livre
+にほん:nihon:Japon
+ねこ:neko:chat
+がくせい:gakusei:étudiant
+の:no:de
+#
+!Leçon 02
+?o
+あなた:anata:tu
+ひと:hito:personne
+はい:hai:oui
+いいえ:iie:non
+こんにちは:konnichiha:bonjour
+でわありません:dewaarimasen:ne pas être
+-じん:-jin:personne
+フランス:furansu:France
+だれ:dare:qui
+いぬ:inu:chien
+か:ka:?
+そう:sou:comme cela
+も:mo:aussi
+#
+!Leçon 03
+?o
+しゅみ:shumi:passe-temps
+おんがく:ongaku:musique
+えいが:eiga:film
+なまえ:namae:nom
+くに:kuni:pays
+よく:yoku:souvent
+よむ:yomu:lire
+きく:kiku:écouter
+みる:miru:regarder
+-ます:-masu:futur, présent
+-こと:-koto:infinitif
+なに:nani:que, quel, quoi
+なん:nan:que, quel, quoi
+#
+!Leçon 04
+?o
+-ご:-go:langue
+さかな:sakana:poisson
+コーヒー:kohi:café
+パン:pan:pain
+たまご:tamago:oeuf
+はなす:hanasu:parler
+たべる:taberu:manger
+のむ:nomu:boire
+やる:yaru:faire
+けさ:kesa:ce matin
+こんばんは:konbanha:bonsoir
+と:to:et
+-ました:-mashita:passé
+そうして:soushite:ensuite
+#
+!Leçon 05
+?o
+じ:ji:heure
+いく:iku:aller
+くる:kuru:venir
+かえる:kaeru:retourner
+どこ:doko:où
+いつ:itsu:quand
+あした:ashita:demain
+きょう:kyou:aujourd'hui
+いま:ima:maintenant
+えいがかん:eigakan:cinéma
+いえ:ie:maison
+に:ni:à
+いち:ichi:un
+に:ni:deux
+さん:san:trois
+し:shi:quatre
+よん:yon:quatre
+ご:go:cinq
+ろく:roku:six
+ななつ:nanatsu:sept
+しち:shichi:sept
+はち:hachi:huit
+きゅう:kyuu:neuf
+く:ku:neuf
+じゅう:juu:dix
+#
+!Leçon 06
+?o
+きのう:kinou:hier
+ともだち:tomodachi:ami
+なにか:nanika:quelque chose
+なにも:nanimo:rien
+でも:demo:mais
+こんばん:konban:ce soir
+また:mata:encore
+いっしょに:isshoni:ensemble
+かいいれる:kaiireru:acheter
+ドイツ:doitsu:Allemagne
+と:to:avec
+よ:yo:!
+-ません:-masen:négation
+でした:deshita:passé de être
+-ましょう:-mashou:let's
+#
+!Leçon 07
+?o
+かばん:kaban:sac
+おおきい:ookii:gros
+ちいさい:chiisai:petit
+たぶん:tabun:peut-être
+せんせい:sensei:maître
+きく:kiku:demander
+くるま:kuruma:voiture
+すみません:sumimasen:désolé
+いくら:ikura:combien de
+えん:en:yen
+ちょっと:chotto:un peu
+たかい:takai:cher
+やすい:yasui:pas cher
+テレビ:terebi:télévision
+これ:kore:ceci
+それ:sore:cela
+あれ:are:cela là-bas
+どれ:dore:laquelle, lequel
+この:kono:ce, cet, cette
+その:sono:ce, cet, cette
+あの:ano:ce, cet, cette là-bas
+どの:dono:quel, quelle
+#
+!Leçon 08
+?o
+あたらしい:atarashii:nouveau
+すぐ:sugu:bientôt
+おなじ:onaji:pareil
+ほしい:hoshii:voulu
+どんな:donna:quel genre
+はやい:hayai:rapide
+すき:suki:aimé
+ふるい:furui:vieux
+おそい:osoi:lent
+きらい:kirai:détesté
+カナダ:kanada:Canada
+が:ga:mais
+が:ga:(marqueur de sujet)
+-くない:-kunai:négation adj en i
+-かった:-katta:passé adj en i
+-くなかった:-kunakatta:négation passé adj en i
+-くて:-kute:premier adj en i
+#
+!Leçon 09
+?o
+おんな:onna:femme
+こ:ko:enfant
+おとこ:otoko:homme, mâle
+ゆうめい:yuumei:(na) célébrité
+かしゅ:kashu:chanteur
+きれい:kirei:beau, joli, propre
+とても:totemo:excessivement, très, vraiment
+やさしい:yasashii:doux, gentil, tendre
+おいしい:oishii:bon, délicieux, excellent
+ケーキ:keki:gâteau, patisserie
+かわいい:kawaii:charmant, mignon
+#
+!Leçon 10
+?o
+じ:ji:heure
+ふん:fun:minute
+びょう:byou:seconde
+まえ:mae:antérieur, avant, devant
+はん:han:demi, et demie, moitié
+ごぜん:gozen:matin
+ごご:gogo:après-midi
+ひゃく:hyaku:cent
+せん:sen:mille
+まん:man:dix mille, innombrables, tout
+#
+!Leçon 11
+?o
+ゆうびんきょく:yuubinkyoku:bureau de poste
+ぎんこう:ginkou:banque
+えき:eki:gare, station
+きっさてん:kissaten:café (lieu)
+りんご:ringo:pomme
+れいぞうこ:reizouko:réfrigérateur
+テーブル:teburu:table
+コンビニ:konbini:supérette
+リモコン:rimokon:télécommande
+タクシー:takushi:taxi
+サングラス:sangurasu:lunettes de soleil
+ありがとう:arigatou:merci
+#
+!Leçon 12
+?o
+にく:niku:viande
+やぎゅう:yagyuu:boeuf
+ぎゅうにく:gyuuniku:viande de boeuf
+ジャガいも:jagaimo:patate
+おちゃ:ocha:thé
+ワイン:wain:vin
+べんきょう:benkyou:études
+する:suru:faire, pratiquer
+うた:uta:chanson, poème
+うたう:utau:chanter
+ぼく:boku:je, moi (masc)
+#
+!Leçon 13
+?o
+アメリカ:amerika:Amérique, U.S.A.
+とうきょう:toukyou:Tokyo
+えいご:eigo:la langue anglaise
+にもつ:nimotsu:bagage
+じゅんび:junbi:préparation
+あまり:amari:pas vraiment
+だいじょうぶ:daijoubu:OK, sûr
+そっか:sokka:je vois
+らいしゅう:raishuu:semaine prochaine
+げつようび:getsuyoubi:lundi
+かようび:kayoubi:mardi
+すいようび:suiyoubi:mercredi
+もくようび:mokuyoubi:jeudi
+きんようび:kinyoubi:vendredi
+どようび:doyoubi:samedi
+にちようび:nichiyoubi:dimanche
+げつよう:getsuyou:lundi
+かよう:kayou:mardi
+すいよう:suiyou:mercredi
+もくよう:mokuyou:jeudi
+きんよう:kinyou:vendredi
+どよう:doyou:samedi
+にちよう:nichiyou:dimanche
+りょこう:ryokou:voyage
+パスポート:pasupoto:passeport
+おもしろい:omoshiroi:amusant, bizarre, intéressant
+#
+!Leçon 14
+?o
+へん:hen:les alentours
+にぎやか:nigiyaka:animé, vivant
+こども:kodomo:enfant
+いっぱい:ippai:plein de, à fond
+いっぱい:ippai:ivre, un verre de
+むすこ:musuko:fils
+むすめ:musume:fille
+あたし:atashi:je, moi (fém)
+あそぶ:asobu:jouer à, s'amuser
+ぬぐ:nugu:se déshabiller
+まつ:matsu:attendre (quelque chose)
+しぬ:shinu:mourir
+じゃない:janai:ne pas être
+#
+!Leçon 15
+?o
+とき:toki:heure, temps
+げんき:genki:santé, énergie
+てんき:tenki:les éléments, temps
+かぞく:kazoku:famille, membre de la
+うみ:umi:mer
+いい:ii:bien, bon (yo-)
+わるい:warui:grave, mauvais, méchant
+どこか:dokoka:quelque part
+けど:kedo:mais
+ピアノ:piano:piano
+およぐ:oyogu:nager
+できる:dekiru:être capable
+おもう:omou:croire, penser
+#
+!Leçon 16
+?o
+しごと:shigoto:occupation, travail
+いそがしい:isogashii:être occupé
+みんな:minna:tous, tout, tout le monde
+みな:mina:tous, tout, tout le monde
+でかける:dekakeru:partir, sortir
+こうえん:kouen:jardin public, parc
+やめる:yameru:cesser, stopper, terminer
+やめる:yameru:démissioner, quitter
+たいへん:taihen:grand, très, énorme
+ほか:hoka:ailleurs, le reste !
+ギター:gita:guitare
+サッカー:sakka:football
+#
+!Leçon DS 21 : Informal Verbs
+?o
+あるく:aruku:marcher
+まなぶ:manabu:étudier en profondeur, étudier à fond
+わかる:wakaru:comprendre, connaître (une langue), être au courant
+がんばる:ganbaru:insister, persister, tenir ferme
+たべもの:tabemono:nourriture
+みず:mizu:eau
+かわ:kawa:cours d'eau, rivière
+やま:yama:mont, montagne
+-う:-u:présent, futur
+-ない:-nai:négation
+-た:-ta:passé
+-なかった:-nakatta:négation passée
+#
+!Leçon DS ?? : ??
+?x
+#
+# desu -> da
+#
+!Leçon DS 23 : Verb Bases
+?x
+#ichidan : fin en -eru ou -iru
+#ichidan == ru-verbe
+#dodan == u-verbe
+#ichidan + dodan -> formal verb
+#les autres -> verbe irrégulier
+#ichidan, pour tous, retir ru
+#ichidan base 1 :
+#ichidan base 2 :
+#ichidan base 3 : -ru
+#ichidan base 4 : -re
+#ichidan base 5 : -you
+#ichidan base te : -te
+#ichidan base ta : -ta
+#ichidan, base 1 à 5 : retir le u final, base te et ta, retir la dernière sylabe
+#dodan base 1 : -a || -wa (う)
+#dodan base 2 : -i
+#dodan base 3 : -u
+#dodan base 4 : -e
+#dodan base 5 : -ou
+#dodan base te : -nde (ぶ,む,ぬ) ||
+#                -tte (う,つ,る)  ||
+#                -ite (く) ||
+#                -ide (ぐ) ||
+#                -shite (す) )
+#dodan base ta : -nda (ぶ,む,ぬ) ||
+#                -tta (う,つ,る) ||
+#                -ita (く) ||
+#                -ida (ぐ) ||
+#                -shita (す) )
+#formal verb -> présent, futur : base 2
+#formal verb -> négation :       base 2
+#formal verb -> passé :          base 2
+#formal verb -> négation passé : base 2
+#verbe irrégulier -> présent, futur : base 3
+#verbe irrégulier -> négation :       base 1 - nai
+#verbe irrégulier -> passé :          base ta
+#verbe irrégulier -> négation passé : base 1 - nakatta
+つくる:tsukuru:fabriquer, produire, créer
+はいる:hairu:entrer, pénétrer
+でる:deru:sortir
+うける:ukeru:recevoir, accepter
+あたえる:ataeru:donner, offrir, décerner
+やすむ:yasumu:se reposer, prendre un congé, être absent
+ねむる:nemuru:dormir
+しぬ:shinu:mourir
+ころす:korosu:tuer, massacrer
+#
+!Leçon DS 26 : Verb Bases 1
+# suru : faire
+# b1 :  shi
+# b2 :  shi
+# b3 :  suru
+# b4 :  sure
+# b5 :  shiyou
+# bte : shite
+# bta : shita
+#
+# kuru : venir
+# b1 :  ko
+# b2 :  ki
+# b3 :  kuru
+# b4 :  kure
+# b5 :  koyou
+# bte : kite
+# bta : kita
+#
+# iku : aller
+# b1 :  ika
+# b2 :  iki
+# b3 :  iku
+# b4 :  ike
+# b5 :  ikou
+# bte : itte
+# bta : itta
+#
+!Leçon DS 32: I-Adjectives
+?x
+#
+# Fini par i (sauf ie)
+# Connecte avec un i l'adjectif et le nom
+# Vire le i en fin et :
+# -i          : présent
+# -kunai      : négation
+# -katta      : passé
+# -kunakatta  : négation passée
+# Possibilité de finir une phrase par l'adjectif qui remplace desu
+# On n'utilise jamais da à la place de desu avec les adjectifs en i
+#
+!Leçon DS 33: Na-Adjectives
+?x
+#
+# Connecte avec un na l'adjectif et le nom
+# Dérive pas, utilise desu
+#
+!Leçon DS 34: Emotions
+?x
+#
+# Si le sujet est évident, il est homis.
+# Les sujets les plus souvent homis sont : je, tu, il
+# Pour les émotions, on parle souvent de soi -> pas de watashi wa.
+#
+# Verbe :
+# - conjugué en base te + iru : présent, le sujet est dans cet état
+# - conjugué en base ta : passé, le sujet a fini dans cet état
+#
+# Pour utiliser "amour" (ai) comme une émotion (c'est un nom à la base),
+# nécessité de mettre suru après et d'utiliser un nom.
+# ex : Je t'aime -> anata wo ai shite iru

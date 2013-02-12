@@ -1,5 +1,18 @@
 #include "fenetrePrincipale.h"
 
+namespace {
+
+QTextEdit * FabriqueTextEdit()
+{
+   QTextEdit * textEdit = new QTextEdit();
+   textEdit->setTabChangesFocus( true );
+   textEdit->setFontPointSize( 16 );
+   textEdit->setFixedHeight( 36 );
+   return textEdit;
+}
+
+} // unnamed namespace
+
 FenetrePrincipale::FenetrePrincipale( const string inFileName, QWidget * parent ):
 QWidget( parent )
 {
@@ -46,9 +59,9 @@ QWidget( parent )
    labelEntrRoumaji_          = new QLabel( tr( "Roumaji : " ) );
    labelEntrFr_               = new QLabel( tr( "Français : " ) );
 
-   textEditEntrHiraKata_      = new QTextEdit;
-   textEditEntrRoumaji_       = new QTextEdit;
-   textEditEntrFr_            = new QTextEdit;
+   textEditEntrHiraKata_      = FabriqueTextEdit();
+   textEditEntrRoumaji_       = FabriqueTextEdit();
+   textEditEntrFr_            = FabriqueTextEdit();
 
    labelResultat_             = new QLabel;
 
@@ -112,18 +125,7 @@ QWidget( parent )
    labelEntrFr_->setFont( QFont ( "Times", 14 ) );
 
    textEditEntrHiraKata_->setReadOnly( true );
-   textEditEntrHiraKata_->setTabChangesFocus( true );
-   textEditEntrHiraKata_->setFontPointSize( 16 );
-   textEditEntrHiraKata_->setFixedHeight( 34 );
-
-   textEditEntrRoumaji_->setTabChangesFocus( true );
-   textEditEntrRoumaji_->setFontPointSize( 16 );
-   textEditEntrRoumaji_->setFixedHeight( 34 );
    textEditEntrRoumaji_->installEventFilter( filtreEnter_ );
-
-   textEditEntrFr_->setTabChangesFocus( true );
-   textEditEntrFr_->setFontPointSize( 16 );
-   textEditEntrFr_->setFixedHeight( 34 );
    textEditEntrFr_->installEventFilter( filtreEnter_ );
 
    labelResultat_->setFixedHeight( 34 );
@@ -187,6 +189,9 @@ QWidget( parent )
 */
    gridLayout->addWidget( arbreGroupe_, 0, 6, 8, 1 );
    gridLayout->addWidget( pushButtonAppliquer_, 8, 6, 1, 1 );
+
+   afficherRomaji_ = new QCheckBox( "Afficher les romajis" );
+   gridLayout->addWidget( afficherRomaji_, 9, 0, 1, 1 );
 /*
    textEditAjoutJap_->hide();
    textEditAjoutFr_->hide();
@@ -879,17 +884,19 @@ void FenetrePrincipale::valider()
          dictionnaire_->loupe( enregistrLoupe_ );
          premierCoup_ = false;
 
-         textEditEntrRoumaji_->clear();
-         textEditEntrRoumaji_->setFontPointSize( 16 );
-         textEditEntrRoumaji_->setFocus( Qt::OtherFocusReason );
+         if (!afficherRomaji_->isChecked())
+         {
+            textEditEntrRoumaji_->clear();
+            textEditEntrRoumaji_->setFocus( Qt::OtherFocusReason );
+         }
          break;
       case 1 :
          labelResultat_->setText( "Ok !" );
          nouveau( premierCoup_ );
 
-         textEditEntrRoumaji_->clear();
-         textEditEntrRoumaji_->setFontPointSize( 16 );
-         textEditEntrRoumaji_->setFocus( Qt::OtherFocusReason );
+         // textEditEntrRoumaji_->clear();
+         // textEditEntrRoumaji_->setFontPointSize( 16 );
+         // textEditEntrRoumaji_->setFocus( Qt::OtherFocusReason );
          break;
       case 2 :
          labelResultat_->setText( "Un autre mot !" );
@@ -942,8 +949,13 @@ void FenetrePrincipale::nouveau( const bool inOk, const bool inInit )
    textEditEntrFr_->setFontPointSize( 16 );
 
    textEditEntrHiraKata_->setPlainText( QString::fromUtf8( motCourant_->getHiraKata().c_str() ) );
-
    textEditEntrRoumaji_->setFocus( Qt::OtherFocusReason );
+   if (afficherRomaji_->isChecked())
+   {
+      textEditEntrRoumaji_->setPlainText( QString::fromUtf8( motCourant_->getRoumaji().c_str() ) );
+      textEditEntrFr_->setFocus( Qt::OtherFocusReason );
+   }
+
 }/*
 
 void FenetrePrincipale::ajoutHiragana()

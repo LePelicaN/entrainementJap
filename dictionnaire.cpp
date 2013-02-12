@@ -1,4 +1,7 @@
+
 #include "dictionnaire.h"
+
+#include <ctime>
 
 Dictionnaire::Dictionnaire()
 {

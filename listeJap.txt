@@ -1,0 +1,838 @@
+	Hiragana
+!voyelles
+?x
+あ:a;い:i;う:u;え:e;お:o
+!k
+?o
+か:ka;き:ki;く:ku;け:ke;こ:ko
+!s
+?o
+さ:sa;し:shi;す:su;せ:se;そ:so
+!t
+?o
+た:ta;ち:chi;つ:tsu;て:te;と:to
+!n
+?o
+な:na;に:ni;ぬ:nu;ね:ne;の:no
+!h
+?o
+は:ha;ひ:hi;ふ:fu;へ:he;ほ:ho
+!m
+?o
+ま:ma;み:mi;む:mu;め:me;も:mo
+!y
+?o
+や:ya;ゆ:yu;よ:yo
+!r
+?o
+ら:ra;り:ri;る:ru;れ:re;ろ:ro
+!w
+?o
+わ:wa;を:wo
+!-n
+?o
+ん:n
+!g
+?o
+が:ga;ぎ:gi;ぐ:gu;げ:ge;ご:go
+!z
+?o
+ざ:za;じ:ji;ず:zu;ぜ:ze;ぞ:zo
+!d
+?o
+だ:da;ぢ:ji;づ:zu;で:de;ど:do
+!b
+?o
+ば:ba;び:bi;ぶ:bu;べ:be;ぼ:bo
+!p
+?o
+ぱ:pa;ぴ:pi;ぷ:pu;ぺ:pe;ぽ:po
+
+	Katakana
+!voyelles
+?x
+ア:a;イ:i;ウ:u;エ:e;オ:o
+!k
+?o
+カ:ka;キ:ki;ク:ku;ケ:ke;コ:ko
+!s
+?o
+サ:sa;シ:shi;ス:su;セ:se;ソ:so
+!t
+?o
+タ:ta;チ:chi;ツ:tsu;テ:te;ト:to
+!n
+?o
+ナ:na;ニ:ni;ヌ:nu;ネ:ne;ノ:no
+!h
+?o
+ハ:ha;ヒ:hi;フ:fu;ヘ:he;ホ:ho
+!m
+?o
+マ:ma;ミ:mi;ム:mu;メ:me;モ:mo
+!y
+?o
+ヤ:ya;ユ:yu;ヨ:yo
+!r
+?o
+ラ:ra;リ:ri;ル:ru;レ:re;ロ:ro
+!w
+?o
+ワ:wa;ヲ:wo
+!-n
+?o
+ン:n
+!g
+?o
+ガ:ga;ギ:gi;グ:gu;ゲ:ge;ゴ:go
+!z
+?o
+ザ:za;ジ:ji;ズ:zu;ゼ:ze;ゾ:zo
+!d
+?o
+ダ:da;ヂ:ji;ヅ:zu;デ:de;ド:do
+!b
+?o
+バ:ba;ビ:bi;ブ:bu;ベ:be;ボ:bo
+!p
+?o
+パ:pa;ピ:pi;プ:pu;ペ:pe;ポ:po
+
+	Mot
+#
+#
+!Leçon institut n°0 - Divers
+?x
+よむ:yomu:lire
+きく:kiku:écouter
+みる:miru:regarder
+かく:kaku:rédiger, écrire
+わかる:wakaru:comprendre, connaître (une langue), être au courant
+も:mo:aussi, encore
+いちど:ichido:une fois, une opportunité
+おねがい:onegai:demande
+しつもん:shitsumon:question
+します:shimasu:faire
+こたえる:kotaeru:répondre
+#
+!Leçon institut n°1 - Presentation
+?x
+わたし:watashi:je
+の:no:de...), ma, postposition possessive (mon
+は:wa:postposition thématique
+か:ka:postposition ?
+なまえ:namae:nom
+です:desu:être
+でわありません:dewaarimasen:ne pas être
+にほん:nihon:Japon
+-じん:-jin:personne
+-ご:-go:langue
+はい:hai:oui
+いいえ:iie:non
+なに:nani:que, quel, quoi
+あなた:anata:tu
+おなじ:onaji:pareil
+あいさつ:aisatsu:salutation
+はじめまして:hajimemashite:enchanté, ravi de vous rencontrer
+どうぞよろしく:dōzo yoroshiku:heureux de faire votre connaissance
+#
+!Leçon institut n°1 - Pays
+?x
+ちゅうごく:chuugoku:Chine
+アメリカン:amerika:Amérique
+フランス:furansu:France
+スペイン:supein:Espagne
+ロシア:roshia:Russie
+イタリア:itaria:Italie
+イギリス:igirisu:Angleterre
+#
+!Leçon institut n°3 - Salutations
+?x
+おはよう:ohayō:bonjour (le matin)
+おはようございます:ohayō gozaimasu:bonjour formel (le matin)
+こんにちは:konnichiha:bonjour (après-midi)
+こんばんは:konbanha:bonsoir
+おやすみ:oyasumi:bonne nuit
+おやすみなさい:oyasumi nasai:bonne nuit formel
+さようなら:sayōnara:au revoir
+#
+!Divers
+?o
+が:ga:(marqueur de sujet)
+-くない:-kunai:négation adj en i
+-かった:-katta:passé adj en i
+-くなかった:-kunakatta:négation passé adj en i
+-くて:-kute:premier adj en i
+そうして:soushite:ensuite
+にん:nin:homme, personne
+のこり:nokori:reste
+にんずう:ninzuu:nombre de personnes
+あかい:akai:rouge
+#
+!Manga
+?o
+にん:nin:homme, personne
+のこり:nokori:reste
+にんずう:ninzuu:nombre de personnes
+あかい:akai:rouge
+#
+!Test
+?o
+にん:nin:homme, personne
+なに:nani:que, quel, quoi
+あかい:akai:rouge
+-かった:-katta:passé adj en i
+はん:han:demi, et demie, moitié
+#
+!Leçon 01
+?o
+わたし:watashi:je
+です:desu:être
+さん:san:Mr
+ほん:hon:livre
+にほん:nihon:Japon
+ねこ:neko:chat
+がくせい:gakusei:étudiant
+の:no:de
+#
+!Leçon 02
+?o
+あなた:anata:tu
+ひと:hito:personne
+はい:hai:oui
+いいえ:iie:non
+こんにちは:konnichiha:bonjour
+でわありません:dewaarimasen:ne pas être
+-じん:-jin:personne
+フランス:furansu:France
+だれ:dare:qui
+いぬ:inu:chien
+か:ka:?
+そう:sou:comme cela
+も:mo:aussi
+#
+!Leçon 03
+?o
+しゅみ:shumi:passe-temps
+おんがく:ongaku:musique
+えいが:eiga:film
+なまえ:namae:nom
+くに:kuni:pays
+よく:yoku:souvent
+よむ:yomu:lire
+きく:kiku:écouter
+みる:miru:regarder
+-ます:-masu:futur, présent
+-こと:-koto:infinitif
+なに:nani:que, quel, quoi
+なん:nan:que, quel, quoi
+#
+!Leçon 04
+?o
+-ご:-go:langue
+さかな:sakana:poisson
+コーヒー:kohi:café
+パン:pan:pain
+たまご:tamago:oeuf
+はなす:hanasu:parler
+たべる:taberu:manger
+のむ:nomu:boire
+やる:yaru:faire
+けさ:kesa:ce matin
+こんばんは:konbanha:bonsoir
+と:to:et
+-ました:-mashita:passé
+そうして:soushite:ensuite
+#
+!Leçon 05
+?o
+じ:ji:heure
+いく:iku:aller
+くる:kuru:venir
+かえる:kaeru:retourner
+どこ:doko:où
+いつ:itsu:quand
+あした:ashita:demain
+きょう:kyou:aujourd'hui
+いま:ima:maintenant
+えいがかん:eigakan:cinéma
+いえ:ie:maison
+に:ni:à
+いち:ichi:un
+に:ni:deux
+さん:san:trois
+し:shi:quatre
+よん:yon:quatre
+ご:go:cinq
+ろく:roku:six
+ななつ:nanatsu:sept
+しち:shichi:sept
+はち:hachi:huit
+きゅう:kyuu:neuf
+く:ku:neuf
+じゅう:juu:dix
+#
+!Leçon 06
+?o
+きのう:kinou:hier
+ともだち:tomodachi:ami
+なにか:nanika:quelque chose
+なにも:nanimo:rien
+でも:demo:mais
+こんばん:konban:ce soir
+また:mata:encore
+いっしょに:isshoni:ensemble
+かいいれる:kaiireru:acheter
+ドイツ:doitsu:Allemagne
+と:to:avec
+よ:yo:!
+-ません:-masen:négation
+でした:deshita:passé de être
+-ましょう:-mashou:let's
+#
+!Leçon 07
+?o
+かばん:kaban:sac
+おおきい:ookii:gros
+ちいさい:chiisai:petit
+たぶん:tabun:peut-être
+せんせい:sensei:maître
+きく:kiku:demander
+くるま:kuruma:voiture
+すみません:sumimasen:désolé
+いくら:ikura:combien de
+えん:en:yen
+ちょっと:chotto:un peu
+たかい:takai:cher
+やすい:yasui:pas cher
+テレビ:terebi:télévision
+これ:kore:ceci
+それ:sore:cela
+あれ:are:cela là-bas
+どれ:dore:laquelle, lequel
+この:kono:ce, cet, cette
+その:sono:ce, cet, cette
+あの:ano:ce, cet, cette là-bas
+どの:dono:quel, quelle
+#
+!Leçon 08
+?o
+あたらしい:atarashii:nouveau
+すぐ:sugu:bientôt
+おなじ:onaji:pareil
+ほしい:hoshii:voulu
+どんな:donna:quel genre
+はやい:hayai:rapide
+すき:suki:aimé
+ふるい:furui:vieux
+おそい:osoi:lent
+きらい:kirai:détesté
+カナダ:kanada:Canada
+が:ga:mais
+が:ga:(marqueur de sujet)
+-くない:-kunai:négation adj en i
+-かった:-katta:passé adj en i
+-くなかった:-kunakatta:négation passé adj en i
+-くて:-kute:premier adj en i
+#
+!Leçon 09
+?o
+おんな:onna:femme
+こ:ko:enfant
+おとこ:otoko:homme, mâle
+ゆうめい:yuumei:(na) célébrité
+かしゅ:kashu:chanteur
+きれい:kirei:beau, joli, propre
+とても:totemo:excessivement, très, vraiment
+やさしい:yasashii:doux, gentil, tendre
+おいしい:oishii:bon, délicieux, excellent
+ケーキ:keki:gâteau, patisserie
+かわいい:kawaii:charmant, mignon
+#
+!Leçon 10
+?o
+じ:ji:heure
+ふん:fun:minute
+びょう:byou:seconde
+まえ:mae:antérieur, avant, devant
+はん:han:demi, et demie, moitié
+ごぜん:gozen:matin
+ごご:gogo:après-midi
+ひゃく:hyaku:cent
+せん:sen:mille
+まん:man:dix mille, innombrables, tout
+#
+!Leçon 11
+?o
+ゆうびんきょく:yuubinkyoku:bureau de poste
+ぎんこう:ginkou:banque
+えき:eki:gare, station
+きっさてん:kissaten:café (lieu)
+りんご:ringo:pomme
+れいぞうこ:reizouko:réfrigérateur
+テーブル:teburu:table
+コンビニ:konbini:supérette
+リモコン:rimokon:télécommande
+タクシー:takushi:taxi
+サングラス:sangurasu:lunettes de soleil
+ありがとう:arigatou:merci
+#
+!Leçon 12
+?o
+にく:niku:viande
+やぎゅう:yagyuu:boeuf
+ぎゅうにく:gyuuniku:viande de boeuf
+ジャガいも:jagaimo:patate
+おちゃ:ocha:thé
+ワイン:wain:vin
+べんきょう:benkyou:études
+する:suru:faire, pratiquer
+うた:uta:chanson, poème
+うたう:utau:chanter
+ぼく:boku:je, moi (masc)
+#
+!Leçon 13
+?o
+アメリカ:amerika:Amérique, U.S.A.
+とうきょう:toukyou:Tokyo
+えいご:eigo:la langue anglaise
+にもつ:nimotsu:bagage
+じゅんび:junbi:préparation
+あまり:amari:pas vraiment
+だいじょうぶ:daijoubu:OK, sûr
+そっか:sokka:je vois
+らいしゅう:raishuu:semaine prochaine
+げつようび:getsuyoubi:lundi
+かようび:kayoubi:mardi
+すいようび:suiyoubi:mercredi
+もくようび:mokuyoubi:jeudi
+きんようび:kinyoubi:vendredi
+どようび:doyoubi:samedi
+にちようび:nichiyoubi:dimanche
+げつよう:getsuyou:lundi
+かよう:kayou:mardi
+すいよう:suiyou:mercredi
+もくよう:mokuyou:jeudi
+きんよう:kinyou:vendredi
+どよう:doyou:samedi
+にちよう:nichiyou:dimanche
+りょこう:ryokou:voyage
+パスポート:pasupoto:passeport
+おもしろい:omoshiroi:amusant, bizarre, intéressant
+#
+!Leçon 14
+?o
+へん:hen:les alentours
+にぎやか:nigiyaka:animé, vivant
+こども:kodomo:enfant
+いっぱい:ippai:plein de, à fond
+いっぱい:ippai:ivre, un verre de
+むすこ:musuko:fils
+むすめ:musume:fille
+あたし:atashi:je, moi (fém)
+あそぶ:asobu:jouer à, s'amuser
+ぬぐ:nugu:se déshabiller
+まつ:matsu:attendre (quelque chose)
+しぬ:shinu:mourir
+じゃない:janai:ne pas être
+#
+!Leçon 15
+?o
+とき:toki:heure, temps
+げんき:genki:santé, énergie
+てんき:tenki:les éléments, temps
+かぞく:kazoku:famille, membre de la
+うみ:umi:mer
+いい:ii:bien, bon (yo-)
+わるい:warui:grave, mauvais, méchant
+どこか:dokoka:quelque part
+けど:kedo:mais
+ピアノ:piano:piano
+およぐ:oyogu:nager
+できる:dekiru:être capable
+おもう:omou:croire, penser
+#
+!Leçon 16
+?o
+しごと:shigoto:occupation, travail
+いそがしい:isogashii:être occupé
+みんな:minna:tous, tout, tout le monde
+みな:mina:tous, tout, tout le monde
+でかける:dekakeru:partir, sortir
+こうえん:kouen:jardin public, parc
+やめる:yameru:cesser, stopper, terminer
+やめる:yameru:démissioner, quitter
+たいへん:taihen:grand, très, énorme
+ほか:hoka:ailleurs, le reste !
+ギター:gita:guitare
+サッカー:sakka:football
+#
+!Leçon DS 21 : Informal Verbs
+?o
+あるく:aruku:marcher
+まなぶ:manabu:étudier en profondeur, étudier à fond
+わかる:wakaru:comprendre, connaître (une langue), être au courant
+がんばる:ganbaru:insister, persister, tenir ferme
+たべもの:tabemono:nourriture
+みず:mizu:eau
+かわ:kawa:cours d'eau, rivière
+やま:yama:mont, montagne
+-う:-u:futur, présent
+-ない:-nai:négation
+-た:-ta:passé
+-なかった:-nakatta:négation passée
+#
+!Leçon DS 23 : Verb Bases 1
+?o
+つくる:tsukuru:créer, fabriquer, produire
+はいる:hairu:entrer, pénétrer
+でる:deru:sortir
+うける:ukeru:accepter, recevoir
+あたえる:ataeru:donner, décerner, offrir
+やすむ:yasumu:prendre un congé, se reposer, être absent
+ねむる:nemuru:dormir
+しぬ:shinu:mourir
+ころす:korosu:massacrer, tuer
+#
+!Leçon DS 25 : Time
+?o
+よじ:yoji:4h
+くじ:kuji:9h
+-じ:-ji:heure (compteur)
+なんじ:nanji:quelle heure
+じかん:jikan:temps
+はん:han:demi, et demie, moitié
+いっぷん:ippun:1min
+さんぷん:sanpun:3min
+ろっぷん:roppun:6min
+じゅっぷん:juppun:10min
+-ふん:-fun:minute (compteur)
+ごぜん:gozen:matin
+ごご:gogo:après-midi
+ひる:hiru:jour, journée, midi
+れいじ:reiji:minuit
+きのう:kinou:hier
+#
+!Leçon DS 26 : Verb Bases 2
+?o
+おこなう:okonau:accomplir, faire, mettre à exécution
+える:eru:acquérir, gagner, obtenir
+むし:mushi:ignorer, ne pas prêter attention, passer outre
+にげる:nigeru:fuir, s'enfuir
+こおる:kooru:congeler, frigorifier, geler
+かがやく:kagayaku:briller, scintiller
+いみ:imi:sens, signification
+いみする:imisuru:signifier
+はかい:hakai:destruction
+はかいする:hakaisuru:detruire
+おす:osu:appuyer, pousser, tamponner
+うなずく:unazuku:acquiescer
+#
+!Leçon DS 27 : Particles 1
+?o
+は:wa:marqueur de sujet
+が:ga:marqueur de sujet du verbe
+を:wo:marqueur de COD
+に:ni:vers
+も:mo:aussi
+と:to:et (entre deux noms)
+と:to:avec (après un nom)
+で:de:à (après un lieu)
+で:de:en (après un moyen de transport)
+の:no:de
+#
+!Leçon DS 28: Family 1
+?o
+はは:haha:(ma) mère
+ちち:chichi:(mon) père
+きょうだい:kyoudai:(ma) fratrie, (ma) sœur, (mes) frères et sœurs, (mon) frère
+ともだち:tomodachi:ami
+あに:ani:(mon) frère ainé
+おとうと:otouto:(mon) petit frère
+あね:ane:(ma) sœur aînée
+いもうと:imouto:(ma) sœur cadette
+おたく:otaku:vous
+おたく:otaku:votre maison
+おかあさん:okaasan:(votre) mère
+おとうさん:otousan:(votre) père
+ごきょうだい:gokyoudai:(vos) frères et sœurs, (votre) fratrie, (votre) frère, (votre) sœur
+おにいさん:oniisan:(votre) frère aîné
+おとうとさん:otoutosan:(votre) petit frère
+おねえさん:oneesan:(votre) sœur aînée
+いもうとさん:imoutosan':(votre) sœur cadette
+#
+!Leçon DS 29: Family 2
+?o
+かない:kanai:(ma) femme
+おっと:otto:(mon) mari, (mon) époux
+むすこ:musuko:(mon) fils
+むすめ:musume:(ma) fille
+おくさん:okusan:(votre) femme, femme marié, madame
+ごしゅじん:goshujin:(votre) mari
+むすこさん:musukosan:(votre) fils
+むすめさん:musumesan:(votre) fille
+そぼ:sobo:(ma) grand-mère
+そふ:sofu:(mon) grand-père
+おば:oba:(ma) tante (sœur aînée du parent)
+おじ:oji:(mon) oncle (frère aîné du parent)
+おばあさん:obaasan:(votre) grand'mère, femme âgée
+おじいさん:ojiisan:(votre) grand-père, homme âgé, vieillard
+おばさん:obasan:(votre) tante, dame, femme, madame
+おじさん:ojisan:(votre) oncle
+ボーイフレンド:boifurendo:petit ami
+かのじょ:kanojo:elle
+かのじょ:kanojo:petite amie
+#
+!Leçon DS 30: Titles and Stations
+?o
+-さん:-san:Mme, Mr
+-くん:-kun:garçon (titre)
+-ちゃん:-chan:fille (titre)
+-さま:-sama:supérieur (titre)
+せんせい:-sensei:maître (titre)
+えき:eki:gare, station
+#
+!Leçon DS 31: Places
+?o
+えき:eki:gare, station
+フロントデスク:furontodesuku:réception (hôtel)
+もん:mon:portail
+エスカレーター:esukareta:escalator, escalier roulant
+ロッカー:rokka:consigne automatique, vestiaire
+タクシーのりば:takushinoriba:station de taxis
+でんわ:denwa:téléphone
+みずのみば:mizunomiba:fontaine à eau
+あずかりしょう:azukarishou:enregistrement des bagages
+へや:heya:chambre, pièce, salle
+ドア:doa:porte (à l'occidentale)
+#
+!Leçon DS 32: I-Adjectives
+?o
+よい:yoi:agréable, bien, bon, ok
+いたい:itai:douloureux
+うつくしい:utsukushii:beau, magnifique, ravissant
+はやい:hayai:prompt, rapide, subit
+きたない:kitanai:malpropre, sale
+すずしい:suzushii:frais, rafraîchissant
+つよい:tsuyoi:fort, puissant
+みにくい:minikui:hideux, horrible à voir, laid
+よわい:yowai:délicat, faible, fragile
+あかい:akai:rouge
+しろい:shiroi:blanc
+あおい:aoi:bleu
+くろい:kuroi:noir
+くろい:kuroi:sombre
+おおきい:ookii:gros, large
+ちいさい:chiisai:petit
+くさい:kusai:fétide, puant
+あつい:atsui:chaud
+さむい:samui:froid (temps)
+#
+!Leçon DS 33: Na-Adjectives
+?o
+してき:shiteki:poétique
+しつれい:shitsurei:impolit, rude
+すき:suki:aimé, apprécié, penchant pour
+きらい:kirai:(na), détestable, haïssable
+しずか:shizuka:calme, paisible, silencieux
+べんり:benri:confortable, pratique, utile
+じょうず:jouzu:bon, doué, habile, ingénieux
+はで:hade:somptueux
+はで:hade:tapageur, voyant
+ていねい:teinei:aimable, attentif, poli, soigneux
+しょうじき:shoujiki:honnête, intégre, loyale
+#
+!Leçon DS 34: Emotions
+?o
+うれしい:ureshii:content
+しあわせ:shiawase:bonheur, bénédiction, chance
+かなしい:kanashii:affligé, triste
+びょうき:byouki:maladie
+うらやましい:urayamashii:enviable, jaloue
+ねむい:nemui:avoir sommeil
+いる:iru:exister, être (êtres animés)
+おこる:okoru:se mettre en colère
+おこっている:okotte iru:être en colère
+しんぱい:shinpai:angoisse, anxiété, souci
+しんぱいしている:shinpai shite iru:être angoissé
+つかれる:tsukareru:être fatigué
+よっぱらう:yopparau:s'enivrer, se griser, être ivre
+あい:ai:amour
+#
+!Leçon DS 35: Places 2
+?o
+レストラン:resutoran:restaurant
+ガソリンスタンド:gasorinsutando:station essence, station service
+ゆうびんきょく:yuubinkyoku:La Poste, poste
+やっきょく:yakkyoku:pharmacie
+みせ:mise:boutique, magasin, échoppe
+ホテル:hoteru:hôtel
+カメラ:kamera:appareil photo
+-や:-ya:boutique spécialisée dans
+スーパーマーケット:supamaketo:supermarché
+びょういん:byouin:hôpital
+#
+!Leçon DS 38: Nations
+?o
+にほん:nihon:Japon
+ちゅうごく:chuugoku:Chine
+アメリカン:amerika:Amérique
+スペイン:supein:Espagne
+フランス:furansu:France
+ロシア:roshia:Russie
+ドイツ:doitsu:Allemagne
+イタリア:itaria:Italie
+イギリス:igirisu:Angleterre
+から:kara:from
+#
+!Leçon DS 39: Particles 2
+?o
+か:ka:ou
+へ:he:vers
+や:ya:et entre autre
+でも:demo:mais, malgré, même
+-こと:-koto:V b3 -> N
+ね:ne:, non ?
+なあ:naa:woah
+よ:yo:!!!
+わ:wa:!!! (fém)
+が:ga:mais
+#
+!Leçon DS 40: Fruit
+?o
+ぶどう:budou:raisin
+いちご:ichigo:fraise
+りんご:ringo:pomme
+もも:momo:pêche
+すいか:suika:pastèque
+オレンジ:orenji:orange
+レモン:remon:citron
+バナナ:banana:banane
+パイナップル:painapuru:ananas
+メロン:meron:melon
+#
+!Leçon DS 41: Vegetables
+?o
+こめ:kome:riz
+トマト:tomato:tomate
+ジャガいも:jagaimo:patate
+とうもろこし:toumorokoshi:maïs
+にんじん:ninjin:carotte
+まめ:mame:haricots, pois
+セロリ:serori:celery
+れたす:retasu:laitue
+ねぎ:negi:oignon
+サラダ:sarada:salade
+#
+!Leçon DS 42: Meat
+?o
+ビーフ:bifu:boeuf
+ぶたにく:butaniku:viande de porc
+ぶた:buta:porc
+にく:niku:viande
+チキン:chikin:poulet
+ハム:hamu:jambon
+ステーキ:suteki:steak
+さかな:sakana:poisson
+まぐろ:maguro:thon
+たまご:tamago:oeuf
+ビーコン:bikon:bacon
+ソーセージ:soseji:saucisse
+#
+!Leçon DS 43: Other Foods
+?o
+ぎゅうにゅう:gyuunyuu:lait
+スープ:supu:soupe
+パン:pan:pain
+コーヒー:kohi:café
+クッキー:kukki:cookie
+おちゃ:ocha:thé
+キャンデー:kyandi:bonbon, sucrerie
+デザート:dezato:dessert
+ソーダ:soda:soda ソーダ  	soda
+アイスクリーム:aisukurimu:glace
+#
+!Leçon DS 45: Connecting Sentences
+?o
+けど:kedo:cependant, mais
+けれど:keredo:cependant, mais
+ので:node:parce que
+から:kara:après
+おもしろい:omoshiroi:amusant, bizarre, intéressant
+ちがう:chigau:différer, être différent
+いる:iru:exister, être (êtres animés)
+ある:aru:avoir, il y a, être (objet inanimé)
+ここ:koko:ici
+そこ:soko:là
+あそこ:asoko:là-bas
+#
+!Leçon DS 47: Desire
+?o
+あげる:ageru:donner
+おどる:odoru:danser
+おしえる:oshieru:enseigner
+けっこん:kekkon:mariage
+さんぽ:sanpo:promenade
+おかね:okane:argent
+ゲーム:gemu:jeux
+やる:yaru:faire
+ゲームをやる:gemu yo yaru:gemu
+しずか:shizuka:calme, paisible, silencieux, tranquille
+うんどう:undou:activité, exercice, mouvement
+もらう:morau:recevoir
+#
+!Leçon DS 48: To Do
+?o
+はくがい:hakugai:persécution
+べんきょう:benkyou:études
+はんたい:hantai:contraire, inverse, oppossé
+つうやく:tsuuyaku:interprétation
+ほんやく:honyaku:traduction
+はつおん:hatsuon:prononciation
+ちゅうしゃ:chuusha:parking
+ジョギング:jogingu:jogging
+そうさ:sousa:investigation, recherche
+あんき:anki:mémorisation
+#
+!Leçon DS 49: Need
+?o
+たすけ:tasuke:aide
+ひつよう:hitsuyou:indispensable, nécessaire
+いる:iru:avoir besoin
+かぎ:kagi:clé
+コンピューター:konpyuta:ordinateur
+かがみ:kagami:miroir
+ペン:pen:plume
+えんぴつ:enpitsu:crayon
+とけい:tokei:horloge, montre
+ひかり:hikari:lumière
+#
+!Leçon DS 50: Emergency!
+?o
+いりょう:iryou:soins médicaux, traitement médical
+くすり:kusuri:médicament
+かんごふ:kangofu:infirmière
+アスピリン:asupirin:aspirine
+いしゃ:isha:médecin
+ほけん:hoken:assurance
+はく:haku:(2), (3), cracher, dégorger, mentir, rendre, rendre, respirer, soupirer, vomir
+すわる:suwaru:s'asseoir
+ほうたい:houtai:bandage, pansement
+まく:maku:enrouler, envelopper, rouler
+wo:houtai:maku ほうたいをまく  	bander
+ききゅう:kikyuu:urgence
+じたい:jitai:situation, état des choses
+きんきゅうじたい:kikyuujitai:état d'urgence
+#
+!Leçon DS 51: Can do
+?o
+せつめい:setsumei:explication, présentation, éclaircissements
+りょこう:ryokou:voyage
+けす:kesu:effacer, supprimer, éteindre (appareil)
+とぶ:tobu:bondir, sauter
+できる:dekiru:possible (forme potentielle de "suru")
+りょうり:ryouri:cuisine
+くべつ:kubetsu:classification, différentiation, distinction
+ほめる:homeru:faire des louanges sur, faire l'éloge de, parler en bien
+へらす:herasu:diminuer, décroître, raccourcir, réduire
+いそぐ:isogu:se dépêcher, se précipiter, se ruer

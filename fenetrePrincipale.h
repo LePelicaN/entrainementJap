@@ -12,6 +12,7 @@
 #include <QRadioButton>
 #include <QDesktopServices>
 #include <QUrl>
+#include <QCheckBox>
 #include <QShortcut>
 #include <QKeySequence>
 #include <QStandardItemModel>
@@ -106,6 +107,8 @@ protected:
    QPushButton    * pushButtonValider_;
    QPushButton    * pushButtonReponse_;
    QPushButton    * pushButtonNouveau_;
+
+   QCheckBox * afficherRomaji_;
 /*
    QTextEdit      * textEditAjoutJap_;
    QTextEdit      * textEditAjoutFr_;

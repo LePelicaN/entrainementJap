@@ -1,0 +1,6 @@
+/build*
+/Makefile*
+/release*
+/debug*
+/setup*
+/src/config_version.hpp
