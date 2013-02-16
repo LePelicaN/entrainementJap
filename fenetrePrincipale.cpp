@@ -22,7 +22,9 @@ QWidget( parent )
 
    messagePresent_            = false;
 
-   choixI_                    = 2;
+   //choixI_                    = 2;
+   modeMot_ = ModeMot::Mot;
+   modeloupe_ = ModeLoupe::Normal;
    choixII_                   = 1;
 
    enregistrLoupe_            = false;
@@ -40,7 +42,7 @@ QWidget( parent )
    radioHiragana_             = new QRadioButton( tr( "Hiragana" ) );
    radioKatakana_             = new QRadioButton( tr( "Katakana" ) );
    radioMot_                  = new QRadioButton( tr( "Mot" ) );
-   radioLoupe_                = new QRadioButton( tr( "Mot échoué" ) );
+   loupeUniquement_ = new QCheckBox( tr( "Échoués uniquement" ) );
 
    groupBoxRadioBII_          = new QGroupBox( tr( "Choix exercice II" ) );
    hBoxLayoutRadioII_         = new QHBoxLayout;
@@ -90,12 +92,12 @@ QWidget( parent )
    radioHiragana_->setFont( QFont( "Times", 14 ) );
    radioKatakana_->setFont( QFont( "Times", 14 ) );
    radioMot_->setFont( QFont( "Times", 14 ) );
-   radioLoupe_->setFont( QFont( "Times", 14 ) );
+   loupeUniquement_->setFont( QFont( "Times", 14 ) );
 
    hBoxLayoutRadioI_->addWidget( radioHiragana_ );
    hBoxLayoutRadioI_->addWidget( radioKatakana_ );
    hBoxLayoutRadioI_->addWidget( radioMot_ );
-   hBoxLayoutRadioI_->addWidget( radioLoupe_ );
+   hBoxLayoutRadioI_->addWidget( loupeUniquement_ );
 
    groupBoxRadioBI_->setLayout( hBoxLayoutRadioI_ );
 
@@ -192,6 +194,12 @@ QWidget( parent )
 
    afficherRomaji_ = new QCheckBox( "Afficher les romajis" );
    gridLayout->addWidget( afficherRomaji_, 9, 0, 1, 1 );
+
+   labelNbAjout_ = new QLabel( tr( "Nombre d'ajout par erreur" ) );
+   nbAjout_ = new QSpinBox;
+   nbAjout_->setValue( 2 );
+   gridLayout->addWidget( labelNbAjout_, 10, 0, 1, 1 );
+   gridLayout->addWidget( nbAjout_, 10, 1, 1, 1 );
 /*
    textEditAjoutJap_->hide();
    textEditAjoutFr_->hide();
@@ -227,8 +235,8 @@ QWidget( parent )
             this,           SLOT(   selectKatakana( bool ) ) );
    connect( radioMot_,      SIGNAL( toggled( bool ) ),
             this,           SLOT(   selectMot( bool ) ) );
-   connect( radioLoupe_,    SIGNAL( toggled( bool ) ),
-            this,           SLOT(   selectLoupe( bool ) ) );
+   connect( loupeUniquement_, SIGNAL( stateChanged( int ) ),
+            this,             SLOT(   selectLoupe( int ) ) );
 
    connect( radioTotalAlea_,  SIGNAL( toggled( bool ) ),
             this,             SLOT(   selectTotalAlea( bool ) ) );
@@ -606,19 +614,19 @@ void FenetrePrincipale::chargementArbre()
 
    arbreGroupe_->clear();
 
-   switch ( choixI_ )
+   switch ( modeMot_ )
    {
-      case 0 :
+      case ModeMot::Hiragana :
          ptOrdre        = &ordreHiragana_;
          ptMapGroupe    = &mapHiraganaGroupe_;
          ptMapChecked   = &mapHiraganaChecked_;
          break;
-      case 1 :
+      case ModeMot::Katakana :
          ptOrdre        = &ordreKatakana_;
          ptMapGroupe    = &mapKatakanaGroupe_;
          ptMapChecked   = &mapKatakanaChecked_;
          break;
-      case 2 :
+      case ModeMot::Mot :
          ptOrdre        = &ordreMot_;
          ptMapGroupe    = &mapMotGroupe_;
          ptMapChecked   = &mapMotChecked_;
@@ -653,21 +661,21 @@ void FenetrePrincipale::chargementDico()
    vector< Mot >                  * ptVecteur;
    vector< Mot >::iterator          itVecteur;
 
-   switch ( choixI_ )
+   switch ( modeMot_ )
    {
-      case 0 :
+      case ModeMot::Hiragana :
          ptOrdre        = &ordreHiragana_;
          ptMapGroupe    = &mapHiraganaGroupe_;
          ptMapChecked   = &mapHiraganaChecked_;
          ptFctAjout     = &Dictionnaire::ajouterHiragana;
          break;
-      case 1 :
+      case ModeMot::Katakana :
          ptOrdre        = &ordreKatakana_;
          ptMapGroupe    = &mapKatakanaGroupe_;
          ptMapChecked   = &mapKatakanaChecked_;
          ptFctAjout     = &Dictionnaire::ajouterKatakana;
          break;
-      case 2 :
+      case ModeMot::Mot :
          ptOrdre        = &ordreMot_;
          ptMapGroupe    = &mapMotGroupe_;
          ptMapChecked   = &mapMotChecked_;
@@ -702,7 +710,7 @@ void FenetrePrincipale::selectHiragana( bool inChecked )
 {
    if ( inChecked )
    {
-      choixI_ = 0;
+      modeMot_ = ModeMot::Hiragana;
       labelEntrFr_->hide();
       textEditEntrFr_->hide();
       chargementArbre();
@@ -713,7 +721,7 @@ void FenetrePrincipale::selectKatakana( bool inChecked )
 {
    if ( inChecked )
    {
-      choixI_ = 1;
+      modeMot_ = ModeMot::Katakana;
       labelEntrFr_->hide();
       textEditEntrFr_->hide();
       chargementArbre();
@@ -724,22 +732,24 @@ void FenetrePrincipale::selectMot( bool inChecked )
 {
    if ( inChecked )
    {
-      choixI_ = 2;
+      modeMot_ = ModeMot::Mot;
       labelEntrFr_->show();
       textEditEntrFr_->show();
       chargementArbre();
    }
 }
 
-void FenetrePrincipale::selectLoupe( bool inChecked )
+void FenetrePrincipale::selectLoupe( int inNouvelEtat )
 {
-   if ( inChecked )
-   {
-      choixI_ = 3;
-      labelEntrFr_->show();
-      textEditEntrFr_->show();
-      chargementArbre();
-   }
+   modeloupe_ = ModeLoupe::Enum( inNouvelEtat );
+   chargementArbre();
+   // if ( inChecked )
+   // {
+      // choixI_ = 3;
+      // labelEntrFr_->show();
+      // textEditEntrFr_->show();
+      // chargementArbre();
+   // }
 }
 
 void FenetrePrincipale::selectTotalAlea( bool inChecked )
@@ -831,7 +841,7 @@ void FenetrePrincipale::valider()
       sep = "\n";
    }
 
-   if ( choixI_ > 1 )
+   if ( modeMot_ == ModeMot::Mot )
    {
       doc = textEditEntrFr_->document();
       sep = "";
@@ -860,7 +870,7 @@ void FenetrePrincipale::valider()
 
    if ( saisieRoumaji == motCourant_->getRoumaji() )
    {
-      if ( choixI_ > 1 )
+      if ( modeMot_ == ModeMot::Mot )
       {
          if ( motCourant_->verifFr( vecteurFr ) )
          {
@@ -881,7 +891,7 @@ void FenetrePrincipale::valider()
    {
       case 0 :
          labelResultat_->setText( "Mauvaise réponse." );
-         dictionnaire_->loupe( enregistrLoupe_ );
+         dictionnaire_->loupe( modeMot_, enregistrLoupe_, nbAjout_->value() );
          premierCoup_ = false;
 
          if (!afficherRomaji_->isChecked())
@@ -925,7 +935,7 @@ void FenetrePrincipale::valider()
 
 void FenetrePrincipale::reponse()
 {
-   dictionnaire_->loupe( enregistrLoupe_ );
+   dictionnaire_->loupe( modeMot_, enregistrLoupe_, nbAjout_->value() );
    premierCoup_ = false;
 
    textEditEntrRoumaji_->setPlainText( QString::fromUtf8( motCourant_->getRoumaji().c_str() ) );
@@ -933,13 +943,13 @@ void FenetrePrincipale::reponse()
 }
 
 void FenetrePrincipale::nouveau( const bool inOk, const bool inInit )
-{/*
+{
    if ( !inInit && !inOk )
    {
-      dictionnaire_->loupe( enregistrLoupe_ );
-   }*/
+      dictionnaire_->loupe( modeMot_, enregistrLoupe_, nbAjout_->value() );
+   }
 
-   motCourant_    = dictionnaire_->nouveauMot( choixI_, choixII_, inOk );
+   motCourant_ = dictionnaire_->nouveauMot( modeMot_, modeloupe_, choixII_, inOk );
    premierCoup_   = true;
 
    textEditEntrHiraKata_->clear();
@@ -1002,7 +1012,7 @@ void FenetrePrincipale::modifArbre( QTreeWidgetItem * inItem, int inCol )
 {
    map< string, Qt::CheckState >  * ptMapChecked;
 
-   switch ( choixI_ )
+   switch ( modeMot_ )
    {
       case 0 :
          ptMapChecked   = &mapHiraganaChecked_;

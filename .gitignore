@@ -4,3 +4,6 @@
 /debug*
 /setup*
 /src/config_version.hpp
+*.dll
+*.exe
+*.user

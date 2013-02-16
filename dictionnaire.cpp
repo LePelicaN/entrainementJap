@@ -6,6 +6,8 @@
 Dictionnaire::Dictionnaire()
 {
    nbErreur_   = 0;
+   ptMultimap_ = NULL;
+   ptVecteur_ = NULL;
 
    srand( time( NULL ) );
 }
@@ -36,8 +38,14 @@ void Dictionnaire::remiseAZeroLoupe()
 {
    ajouteLoupe_ = false;
 
-   multimapLoupe_.clear();
-   multimapPasOkLoupe_.clear();
+   vecteurHiraganaLoupe_.clear();
+   vecteurPasOkHiraganaLoupe_.clear();
+
+   vecteurKatakanaLoupe_.clear();
+   vecteurPasOkKatakanaLoupe_.clear();
+
+   multimapMotLoupe_.clear();
+   multimapPasOkMotLoupe_.clear();
 }
 
 void Dictionnaire::ajouterHiragana( const string & inHiraKata, const string & inRoumaji )
@@ -76,42 +84,40 @@ void Dictionnaire::ajouterMot( Mot & inMot )
    multimapPasOkMot_.insert( pair< string, Mot >( inMot.getHiraKata(), inMot ) );
 }
 
-void Dictionnaire::aleaHiraKata( const int inTypeMot, const int inTypeParcours )
+void Dictionnaire::aleaHiragana( ModeLoupe::Enum inModeLoupe,
+                                 const int inTypeParcours )
 {
-   switch ( inTypeMot )
+   if ( inModeLoupe == ModeLoupe::Normal )
    {
-      // Hiragana
-      case 0 :
-         switch ( inTypeParcours )
-         {
-            // Total
-            case 0 :
-               ptVecteurCour_ =  &vecteurHiragana_;
-               break;
-            // Pas Ok
-            case 1 :
-               ptVecteurCour_ =  &vecteurPasOkHiragana_;
-               break;
-         }
-         ptVecteur_        =  &vecteurHiragana_;
-         ptVecteurPasOk_   =  &vecteurPasOkHiragana_;
-         break;
-      // Katakana
-      case 1 :
-         switch ( inTypeParcours )
-         {
-            // Total
-            case 0 :
-               ptVecteurCour_ =  &vecteurKatakana_;
-               break;
-            // Pas Ok
-            case 1 :
-               ptVecteurCour_  =  &vecteurPasOkKatakana_;
-               break;
-         }
-         ptVecteur_        =  &vecteurKatakana_;
-         ptVecteurPasOk_   =  &vecteurPasOkKatakana_;
-         break;
+      switch ( inTypeParcours )
+      {
+         // Total
+         case 0 :
+            ptVecteurCour_ =  &vecteurHiragana_;
+            break;
+         // Pas Ok
+         case 1 :
+            ptVecteurCour_ =  &vecteurPasOkHiragana_;
+            break;
+      }
+      ptVecteur_        =  &vecteurHiragana_;
+      ptVecteurPasOk_   =  &vecteurPasOkHiragana_;
+   }
+   else
+   {
+      switch ( inTypeParcours )
+      {
+         // Total
+         case 0 :
+            ptVecteurCour_ =  &vecteurHiraganaLoupe_;
+            break;
+         // Pas Ok
+         case 1 :
+            ptVecteurCour_ =  &vecteurPasOkHiraganaLoupe_;
+            break;
+      }
+      ptVecteur_        =  &vecteurHiraganaLoupe_;
+      ptVecteurPasOk_   =  &vecteurPasOkHiraganaLoupe_;
    }
 
    ptMultimapCour_ = NULL;
@@ -123,52 +129,94 @@ void Dictionnaire::aleaHiraKata( const int inTypeMot, const int inTypeParcours )
    motCourant_     = &( (*iteVecteur_) );
 }
 
-void Dictionnaire::aleaMot( const int inTypeMot, const int inTypeParcours )
+void Dictionnaire::aleaKatakana( ModeLoupe::Enum inModeLoupe,
+                                 const int inTypeParcours )
+{
+   if ( inModeLoupe == ModeLoupe::Normal )
+   {
+      switch ( inTypeParcours )
+      {
+         // Total
+         case 0 :
+            ptVecteurCour_ =  &vecteurKatakana_;
+            break;
+         // Pas Ok
+         case 1 :
+            ptVecteurCour_  =  &vecteurPasOkKatakana_;
+            break;
+      }
+      ptVecteur_        =  &vecteurKatakana_;
+      ptVecteurPasOk_   =  &vecteurPasOkKatakana_;
+   }
+   else
+   {
+      switch ( inTypeParcours )
+      {
+         // Total
+         case 0 :
+            ptVecteurCour_ =  &vecteurKatakanaLoupe_;
+            break;
+         // Pas Ok
+         case 1 :
+            ptVecteurCour_  =  &vecteurPasOkKatakanaLoupe_;
+            break;
+      }
+      ptVecteur_        =  &vecteurKatakanaLoupe_;
+      ptVecteurPasOk_   =  &vecteurPasOkKatakanaLoupe_;
+   }
+
+   ptMultimapCour_ = NULL;
+
+   aleaPrec_       = (int)( (double)rand() / ( (double)RAND_MAX + 1 ) * ptVecteurCour_->size() );
+
+   iteVecteur_     = ptVecteurCour_->begin() + aleaPrec_;
+
+   motCourant_     = &( (*iteVecteur_) );
+}
+
+void Dictionnaire::aleaMot( ModeLoupe::Enum inModeLoupe, const int inTypeParcours )
 {
    multimap< string, Mot >::iterator ite;
 
-   switch ( inTypeMot )
+   if ( inModeLoupe == ModeLoupe::Normal )
    {
-      // Mot
-      case 2 :
-         switch ( inTypeParcours )
-         {
-            // Total
-            case 0 :
-               ptMultimapCour_ = &multimapMot_;
-               break;
-            // Pas Ok
-            case 1 :
-               ptMultimapCour_ = &multimapPasOkMot_;
-               /*
-               std::cout << "Mot pas ok" << std::endl;
-               std::cout << "\ptMultimapCour_->size() : " << ptMultimapCour_->size() << std::endl;
-               for ( ite = ptMultimapCour_->begin(); ite != ptMultimapCour_->end(); ++ite )
-               {
-                  std::cout << "\t( ( *ite ).second ).getFr() : " << ( ( *ite ).second ).getFr() << std::endl;
-               }
-               */ 
-               break;
-         }
-         ptMultimap_       = &multimapMot_;
-         ptMultimapPasOk_  = &multimapPasOkMot_;
-         break;
-      // Loupe
-      case 3 :
-         switch ( inTypeParcours )
-         {
-            // Total
-            case 0 :
-               ptMultimapCour_ = &multimapLoupe_;
-               break;
-            // Pas Ok
-            case 1 :
-               ptMultimapCour_ = &multimapPasOkLoupe_;
-               break;
-         }
-         ptMultimap_       = &multimapLoupe_;
-         ptMultimapPasOk_  = &multimapPasOkLoupe_;
-         break;
+      switch ( inTypeParcours )
+      {
+         // Total
+         case 0 :
+            ptMultimapCour_ = &multimapMot_;
+            break;
+         // Pas Ok
+         case 1 :
+            ptMultimapCour_ = &multimapPasOkMot_;
+            /*
+            std::cout << "Mot pas ok" << std::endl;
+            std::cout << "\ptMultimapCour_->size() : " << ptMultimapCour_->size() << std::endl;
+            for ( ite = ptMultimapCour_->begin(); ite != ptMultimapCour_->end(); ++ite )
+            {
+               std::cout << "\t( ( *ite ).second ).getFr() : " << ( ( *ite ).second ).getFr() << std::endl;
+            }
+            */
+            break;
+      }
+      ptMultimap_       = &multimapMot_;
+      ptMultimapPasOk_  = &multimapPasOkMot_;
+   }
+   else
+   {
+      switch ( inTypeParcours )
+      {
+         // Total
+         case 0 :
+            ptMultimapCour_ = &multimapMotLoupe_;
+            break;
+         // Pas Ok
+         case 1 :
+            ptMultimapCour_ = &multimapPasOkMotLoupe_;
+            break;
+      }
+      ptMultimap_       = &multimapMotLoupe_;
+      ptMultimapPasOk_  = &multimapPasOkMotLoupe_;
    }
 
    ptVecteurCour_ = NULL;
@@ -202,60 +250,96 @@ void Dictionnaire::messageFin()
    nbErreur_   = 0;
 }
 
-Mot * Dictionnaire::nouveauMot( const int inTypeMot, const int inTypeParcours, const bool inPrecValide )
+Mot * Dictionnaire::nouveauMot( ModeMot::Enum inModeMot,
+                                ModeLoupe::Enum inModeLoupe,
+                                const int inTypeParcours,
+                                const bool inPrecValide )
 {
    int tailleConteneur;
 
-   switch ( inTypeMot )
+   if ( inModeLoupe == ModeLoupe::Normal )
    {
-      case 0 :
-         switch ( inTypeParcours )
-         {
-            case 0 :
-            case 2 :
-               tailleConteneur = vecteurHiragana_.size();
-               break;
-            case 1 :
-               tailleConteneur = vecteurPasOkHiragana_.size();
-               break;
-         }
-         break;
-      case 1 :
-         switch ( inTypeParcours )
-         {
-            case 0 :
-            case 2 :
-               tailleConteneur = vecteurKatakana_.size();
-               break;
-            case 1 :
-               tailleConteneur = vecteurPasOkKatakana_.size();
-               break;
-         }
-         break;
-      case 2 :
-         switch ( inTypeParcours )
-         {
-            case 0 :
-            case 2 :
-               tailleConteneur = multimapMot_.size();
-               break;
-            case 1 :
-               tailleConteneur = multimapPasOkMot_.size();
-               break;
-         }
-         break;
-      case 3 :
-         switch ( inTypeParcours )
-         {
-            case 0 :
-            case 2 :
-               tailleConteneur = multimapLoupe_.size();
-               break;
-            case 1 :
-               tailleConteneur = multimapPasOkLoupe_.size();
-               break;
-         }
-         break;
+      switch ( inModeMot )
+      {
+         case 0 :
+            switch ( inTypeParcours )
+            {
+               case 0 :
+               case 2 :
+                  tailleConteneur = vecteurHiragana_.size();
+                  break;
+               case 1 :
+                  tailleConteneur = vecteurPasOkHiragana_.size();
+                  break;
+            }
+            break;
+         case 1 :
+            switch ( inTypeParcours )
+            {
+               case 0 :
+               case 2 :
+                  tailleConteneur = vecteurKatakana_.size();
+                  break;
+               case 1 :
+                  tailleConteneur = vecteurPasOkKatakana_.size();
+                  break;
+            }
+            break;
+         case 2 :
+            switch ( inTypeParcours )
+            {
+               case 0 :
+               case 2 :
+                  tailleConteneur = multimapMot_.size();
+                  break;
+               case 1 :
+                  tailleConteneur = multimapPasOkMot_.size();
+                  break;
+            }
+            break;
+      }
+   }
+   else
+   {
+      switch ( inModeMot )
+      {
+         case 0 :
+            switch ( inTypeParcours )
+            {
+               case 0 :
+               case 2 :
+                  tailleConteneur = vecteurHiraganaLoupe_.size();
+                  break;
+               case 1 :
+                  tailleConteneur = vecteurPasOkHiraganaLoupe_.size();
+                  break;
+            }
+            break;
+         case 1 :
+            switch ( inTypeParcours )
+            {
+               case 0 :
+               case 2 :
+                  tailleConteneur = vecteurKatakanaLoupe_.size();
+                  break;
+               case 1 :
+                  tailleConteneur = vecteurPasOkKatakanaLoupe_.size();
+                  break;
+            }
+            break;
+         case 2 :
+            switch ( inTypeParcours )
+            {
+               case 0 :
+               case 2 :
+                  tailleConteneur = multimapMotLoupe_.size();
+                  break;
+               case 1 :
+                  tailleConteneur = multimapPasOkMotLoupe_.size();
+                  break;
+            }
+            break;
+      }
    }
 
    if ( tailleConteneur == 0 )
@@ -294,24 +378,27 @@ Mot * Dictionnaire::nouveauMot( const int inTypeMot, const int inTypeParcours, c
          }
       }
 
+      ptVecteur_ = NULL;
+      ptMultimap_ = NULL;
       switch ( inTypeParcours )
       {
          case 0:
          case 1:
-            switch ( inTypeMot )
+            switch ( inModeMot )
             {
                case 0 :
+                  aleaHiragana( inModeLoupe, inTypeParcours );
+               break;
                case 1 :
-                  aleaHiraKata( inTypeMot, inTypeParcours );
+                  aleaKatakana( inModeLoupe, inTypeParcours );
                   break;
                case 2 :
-               case 3 :
-                  aleaMot( inTypeMot, inTypeParcours );
+                  aleaMot( inModeLoupe, inTypeParcours );
                   break;
             }
             break;
          case 2:
-            switch ( inTypeMot )
+            switch ( inModeMot )
             {
                case 0 :
                case 1 :
@@ -323,7 +410,6 @@ Mot * Dictionnaire::nouveauMot( const int inTypeMot, const int inTypeParcours, c
                   motCourant_ = &( (*iteVecteur_) );
                   break;
                case 2 :
-               case 3 :
                   ++iteMultimap_;
                   if ( iteMultimap_ == ptMultimapCour_->end() )
                   {
@@ -389,14 +475,36 @@ int Dictionnaire::existMulti( vector< string > & inSaisieFr )
    return out;
 }
 
-void Dictionnaire::loupe( const bool inEnregistrLoupe )
+void Dictionnaire::loupe( ModeMot::Enum inModeMot,
+                          const bool inEnregistrLoupe,
+                          unsigned int nbAjout )
 {
    ++nbErreur_;
 
-   if ( inEnregistrLoupe && !ajouteLoupe_ && ptMultimap_ != &multimapPasOkLoupe_ )
+   if ( inEnregistrLoupe &&
+        !ajouteLoupe_ &&
+        ptMultimap_ != &multimapPasOkMotLoupe_ &&
+        ptVecteur_ != &vecteurPasOkHiraganaLoupe_ &&
+        ptVecteur_ != &vecteurPasOkKatakanaLoupe_)
    {
-      multimapLoupe_.insert( pair< string, Mot >( motCourant_->getHiraKata(), *motCourant_ ) );
-      multimapPasOkLoupe_.insert( pair< string, Mot >( motCourant_->getHiraKata(), *motCourant_ ) );
+      for ( unsigned int i = 0; i < nbAjout; ++i )
+      {
+         switch ( inModeMot )
+         {
+            case 0 :
+               vecteurHiraganaLoupe_.push_back( *motCourant_ );
+               vecteurPasOkHiraganaLoupe_.push_back( *motCourant_ );
+               break;
+            case 1 :
+               vecteurKatakanaLoupe_.push_back( *motCourant_ );
+               vecteurPasOkKatakanaLoupe_.push_back( *motCourant_ );
+               break;
+            case 2 :
+               multimapMotLoupe_.insert( pair< string, Mot >( motCourant_->getHiraKata(), *motCourant_ ) );
+               multimapPasOkMotLoupe_.insert( pair< string, Mot >( motCourant_->getHiraKata(), *motCourant_ ) );
+               break;
+         }
+      }
 
       ajouteLoupe_ = true;
    }

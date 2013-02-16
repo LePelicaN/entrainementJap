@@ -19,19 +19,41 @@ using std::multimap;
 using std::pair;
 using std::iterator;
 
+struct ModeMot
+{
+   enum Enum
+   {
+      Hiragana,
+      Katakana,
+      Mot
+   };
+};
+struct ModeLoupe
+{
+   enum Enum
+   {
+      Normal,
+      LoupeUniquement
+   };
+};
+
 class Dictionnaire
 {
 
 protected:
    vector< Mot >                       vecteurHiragana_;
+   vector< Mot >                       vecteurHiraganaLoupe_;
    vector< Mot >                       vecteurKatakana_;
+   vector< Mot >                       vecteurKatakanaLoupe_;
    multimap< string, Mot >             multimapMot_;
-   multimap< string, Mot >             multimapLoupe_;
+   multimap< string, Mot >             multimapMotLoupe_;
 
    vector< Mot >                       vecteurPasOkHiragana_;
+   vector< Mot >                       vecteurPasOkHiraganaLoupe_;
    vector< Mot >                       vecteurPasOkKatakana_;
+   vector< Mot >                       vecteurPasOkKatakanaLoupe_;
    multimap< string, Mot >             multimapPasOkMot_;
-   multimap< string, Mot >             multimapPasOkLoupe_;
+   multimap< string, Mot >             multimapPasOkMotLoupe_;
 
    Mot                               * motCourant_;
    vector< Mot >                     * ptVecteurCour_;
@@ -65,16 +87,20 @@ public:
    void ajouterKatakana( Mot & inMot  );
    void ajouterMot(      Mot & inMot );
 
-   void aleaHiraKata( const int inTypeMot, const int inTypeParcours );
-   void aleaMot(      const int inTypeMot, const int inTypeParcours );
+   void aleaHiragana( ModeLoupe::Enum inModeLoupe, const int inTypeParcours );
+   void aleaKatakana( ModeLoupe::Enum inModeLoupe, const int inTypeParcours );
+   void aleaMot( ModeLoupe::Enum inModeLoupe, const int inTypeParcours );
 
    void  messageFin();
 
-   Mot * nouveauMot( const int inTypeMot, const int inTypeParcours, const bool inPrecValide );
+   Mot * nouveauMot( ModeMot::Enum inModeMot, ModeLoupe::Enum inModeLoupe,
+                     const int inTypeParcours, const bool inPrecValide );
 
    int existMulti( vector< string > & inSaisieFr );
 
-   void loupe( const bool inEnregistrLoupe );
+   void loupe( ModeMot::Enum inModeMot,
+               const bool inEnregistrLoupe,
+               unsigned int nbAjout );
 
    friend std::ostream & operator<<( std::ostream & o, Dictionnaire & inDictionnaire );
 };

@@ -3,34 +3,34 @@
 ?x
 あ:a;い:i;う:u;え:e;お:o
 !k
-?o
+?x
 か:ka;き:ki;く:ku;け:ke;こ:ko
 !s
-?o
+?x
 さ:sa;し:shi;す:su;せ:se;そ:so
 !t
-?o
+?x
 た:ta;ち:chi;つ:tsu;て:te;と:to
 !n
-?o
+?x
 な:na;に:ni;ぬ:nu;ね:ne;の:no
 !h
-?o
+?x
 は:ha;ひ:hi;ふ:fu;へ:he;ほ:ho
 !m
-?o
+?x
 ま:ma;み:mi;む:mu;め:me;も:mo
 !y
-?o
+?x
 や:ya;ゆ:yu;よ:yo
 !r
-?o
+?x
 ら:ra;り:ri;る:ru;れ:re;ろ:ro
 !w
-?o
+?x
 わ:wa;を:wo
 !-n
-?o
+?x
 ん:n
 !g
 ?o
@@ -116,7 +116,7 @@
 こたえる:kotaeru:répondre
 #
 !Leçon institut n°1 - Presentation
-?x
+?o
 わたし:watashi:je
 の:no:de...), ma, postposition possessive (mon
 は:wa:postposition thématique
@@ -137,7 +137,7 @@
 どうぞよろしく:dōzo yoroshiku:heureux de faire votre connaissance
 #
 !Leçon institut n°1 - Pays
-?x
+?o
 ちゅうごく:chuugoku:Chine
 アメリカン:amerika:Amérique
 フランス:furansu:France
@@ -147,7 +147,7 @@
 イギリス:igirisu:Angleterre
 #
 !Leçon institut n°3 - Salutations
-?x
+?o
 おはよう:ohayō:bonjour (le matin)
 おはようございます:ohayō gozaimasu:bonjour formel (le matin)
 こんにちは:konnichiha:bonjour (après-midi)

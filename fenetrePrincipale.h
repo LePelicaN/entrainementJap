@@ -16,6 +16,7 @@
 #include <QShortcut>
 #include <QKeySequence>
 #include <QStandardItemModel>
+#include <QtGui/QSpinBox>
 #include <QTreeView>
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
@@ -41,6 +42,8 @@ class FenetrePrincipale : public QWidget
 {
    Q_OBJECT
 
+public :
+
 protected:
    Dictionnaire   * dictionnaire_;
    Mot            * motCourant_;
@@ -50,7 +53,9 @@ protected:
    bool             messagePresent_;
    bool             premierCoup_;
 
-   int              choixI_;
+   //int              choixI_;
+   ModeMot::Enum modeMot_;
+   ModeLoupe::Enum modeloupe_;
    int              choixII_;
 
    bool             enregistrLoupe_;
@@ -79,7 +84,7 @@ protected:
    QRadioButton   * radioHiragana_;
    QRadioButton   * radioKatakana_;
    QRadioButton   * radioMot_;
-   QRadioButton   * radioLoupe_;
+   QCheckBox * loupeUniquement_;
 
    QGroupBox      * groupBoxRadioBII_;
    QHBoxLayout    * hBoxLayoutRadioII_;
@@ -87,6 +92,9 @@ protected:
    QRadioButton   * radioTotalAlea_;
    QRadioButton   * radioAleaSansOk_;
    QRadioButton   * radioALaSuite_;
+
+   QLabel * labelNbAjout_;
+   QSpinBox * nbAjout_;
 
    QPushButton    * pushButtonDemarrerLoupe_;
    QPushButton    * pushButtonArreterLoupe_;
@@ -144,7 +152,7 @@ public slots:
    void selectHiragana( bool inChecked );
    void selectKatakana( bool inChecked );
    void selectMot(      bool inChecked );
-   void selectLoupe(    bool inChecked );
+   void selectLoupe( int inNouvelEtat );
 
    void selectTotalAlea( bool inChecked );
    void selectAleaSansOk( bool inChecked );
