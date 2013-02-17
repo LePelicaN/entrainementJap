@@ -1,5 +1,7 @@
 #include "fenetrePrincipale.h"
 
+#include <rechercheMot/chercheurMot.hpp>
+
 namespace {
 
 QTextEdit * FabriqueTextEdit()
@@ -290,6 +292,13 @@ QWidget( parent )
             this,                 SLOT(   chargementDico() ) );
 
    modif_ = false;
+
+   motRecherche_ = FabriqueTextEdit();
+   QPushButton * rechercheMot = new QPushButton( tr( "Rechercher un mot" ) );
+   gridLayout->addWidget( motRecherche_, 11, 0, 1, 1 );
+   gridLayout->addWidget( rechercheMot, 11, 1, 1, 1 );
+   connect( rechercheMot, SIGNAL( clicked() ),
+            this,         SLOT(   rechercherMot() ) );
 }
 
 FenetrePrincipale::~FenetrePrincipale()
@@ -1038,4 +1047,16 @@ string FenetrePrincipale::myTrim( string & inStr )
    }
 
    return inStr;
+}
+
+#include <rechercheMotGUI/chercheurMotWidget.hpp>
+
+void FenetrePrincipale::rechercherMot()
+{
+   ChercheurMotWidget chercheurMotWidget( ChercheurMot::Chercher( motRecherche_->toPlainText().toStdString() ) );
+   
+   if ( chercheurMotWidget.exec() == QDialog::Accepted )
+   {
+      //emit nouveauManga( choixManga.recupMangaOnline() );
+   }
 }

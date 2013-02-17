@@ -1,0 +1,38 @@
+﻿#
+#<h1>22 résultats pour la recherche "parler"</h1>
+#
+-partie:nombre_resultat
+--sous-expr
+   avant=.*<h1>
+   apres=[[:space:]]résultats[[:space:]]pour[[:space:]]la[[:space:]]recherche.*
+   resultat=[[:digit:]]*
+--regex
+   @@avant ( @@resultat ) @@apres
+
+#    
+#<ul class='resultsList'>
+#<li><a href='http://www.dictionnaire-japonais.com/w/281/??'><img src='_img/soundIcon.png' class='soundIcon' /><span class='pertinence'><span class='diode'><span class='diodeLight' style='width:25px;background:#0f56b7'></span></span></span> <span class='jap'><span class='kana'>???</span> <span class='jp'>??</span> <span class='romaji'>hanasu</span> </span><span class='fr'>parler</span> <span class='detail'></span> <div class='clear'></div></a></li>
+#<li><a href='http://www.dictionnaire-japonais.com/w/3168/??'><img src='_img/soundIcon.png' class='soundIcon' /><span class='pertinence'><span class='diode'><span class='diodeLight' style='width:25px;background:#0f56b7'></span></span></span> <span class='jap'><span class='kana'>????</span> <span class='jp'>??</span> <span class='romaji'>shaberu</span> </span><span class='fr'>parler, discuter</span> <span class='detail'></span> <div class='clear'></div></a></li>
+#</ul>
+#<span class='kana'>???</span>
+#<span class='jp'>??</span>
+#<span class='romaji'>hanasu</span> </span>
+#<span class='fr'>parler</span> <span class='detail'></span> <div class='clear'></div></a></li>
+#
+-partie:liste_mots
+--sous-expr
+   avantListe=.*<ul class='resultsList'>[[:space:]]*
+   apresListe=</ul>.*
+   avantMot=<li>
+   apresMot=.*?</li>[[:space:]]*
+   avantKana=.*?<span class='kana'>
+   apresKana=<
+   avantKanji=.*?<span class='jp'>
+   apresKanji=<
+   avantRomaji=.*?<span class='romaji'>
+   apresRomaji=<
+   avantFrancais=.*?<span class='fr'>
+   apresFrancais=<
+   resultat=[[:digit:]]*
+--regex
+   @@avantListe (?: @@avantMot @@avantKana ( .*? ) @@apresKana @@avantKanji ( .*? ) @@apresKanji @@avantRomaji ( .*? ) @@apresRomaji @@avantFrancais ( .*? ) @@apresFrancais @@apresMot )* @@apresListe

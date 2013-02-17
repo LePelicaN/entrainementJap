@@ -7,3 +7,6 @@
 *.dll
 *.exe
 *.user
+listeJap2.txt
+*.Debug
+*.Release

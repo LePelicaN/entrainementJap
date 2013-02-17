@@ -1,0 +1,12 @@
+#
+-partie:home
+--sous-expr
+   avantResultat=.*?
+   apresResultat=.*?
+
+   avantAdresse=.*?(?:<h3).*?(?:<a href=")
+   avantAdresseOptionnel=(?:/url\?q=)?
+   apresAdresseOptionnel=(?:&amp[^"]*?)?
+   apresAdresse=".*?
+--regex
+   @@avantResultat (?: @@avantAdresse @@avantAdresseOptionnel (.*?) @@apresAdresseOptionnel @@apresAdresse )* @@apresResultat

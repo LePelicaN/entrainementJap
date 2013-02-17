@@ -5,21 +5,37 @@
 TEMPLATE = app
 TARGET = 
 DEPENDPATH += .
-INCLUDEPATH += 	. \
-				.\..
-LIBS        += -lws2_32
+INCLUDEPATH += . \
+				   ./.. \
+               ./src \
+               F:/boost/boost_1_47_0
+LIBS        += -lws2_32 \
+               F:/boost/boost_1_47_0/stage/lib/libboost_regex-mgw44-mt-1_47.a \
+               ./lib/libregex_builder.a
 CONFIG      += console
+QT += network
 # Input
 HEADERS += mot.h \
            hiragana.h \
            katakana.h \
            dictionnaire.h \
            filtreEnter.h \
-           fenetrePrincipale.h
+           fenetrePrincipale.h \
+           src/rechercheMot/chercheurMot.hpp \
+           src/rechercheMotGUI/chercheurMotWidget.hpp \
+           src/utilitaires/fonctionsClasseString.hpp \
+           src/utilitaires/iRecupPageHTML.hpp \
+           src/utilitaires/rechercheGoogle.hpp \
+           src/utilitaires/recupPageHTML.hpp
 SOURCES += mot.cpp \
            hiragana.cpp \
            katakana.cpp \
            dictionnaire.cpp \
            filtreEnter.cpp \
            fenetrePrincipale.cpp \
+           src/rechercheMot/chercheurMot.cpp \
+           src/rechercheMotGUI/chercheurMotWidget.cpp \
+           src/utilitaires/fonctionsClasseString.cpp \
+           src/utilitaires/rechercheGoogle.cpp \
+           src/utilitaires/recupPageHTML.cpp \
            main.cpp

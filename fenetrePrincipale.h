@@ -132,6 +132,8 @@ protected:
    QPushButton    * pushButtonAppliquer_;
 
    bool             modif_;
+
+   QTextEdit * motRecherche_;
    
    void ajout( const int inCode );
 
@@ -176,6 +178,8 @@ public slots:
 */
 
    void modifArbre( QTreeWidgetItem * inItem, int inCol );
+   
+   void rechercherMot();
 };
 
 #endif

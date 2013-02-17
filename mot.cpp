@@ -12,12 +12,12 @@ hiraKata_( inHiraKata ), roumaji_( inRoumaji ), isHiraKata_( false )
 Mot::~Mot()
 {}
 
-string Mot::getStringFr()
+string Mot::getStringFr() const
 {
    string out = "";
    string sep = "";
    
-   for ( vector< string >::iterator it = fr_.begin(); it != fr_.end(); ++it )
+   for ( vector< string >::const_iterator it = fr_.begin(); it != fr_.end(); ++it )
    {
       out += sep + (*it);
       sep = ", ";

@@ -106,21 +106,26 @@
 よむ:yomu:lire
 きく:kiku:écouter
 みる:miru:regarder
-かく:kaku:rédiger, écrire
-わかる:wakaru:comprendre, connaître (une langue), être au courant
+かく:kaku:écrire
+わかる:wakaru:comprendre
 も:mo:aussi, encore
-いちど:ichido:une fois, une opportunité
+いちど:ichido:une fois
 おねがい:onegai:demande
 しつもん:shitsumon:question
 します:shimasu:faire
 こたえる:kotaeru:répondre
+???:hanasu:parler
+??:rei:exemple
+?????:shukudai:devoirs, exercices
 #
 !Leçon institut n°1 - Presentation
-?o
+?x
 わたし:watashi:je
-の:no:de...), ma, postposition possessive (mon
-は:wa:postposition thématique
-か:ka:postposition ?
+の:no:de, ma, mon
+は:wa:marqueur de sujet
+が:ga:marqueur de sujet du verbe
+を:wo:marqueur de COD
+か:ka:?
 なまえ:namae:nom
 です:desu:être
 でわありません:dewaarimasen:ne pas être
@@ -134,7 +139,7 @@
 おなじ:onaji:pareil
 あいさつ:aisatsu:salutation
 はじめまして:hajimemashite:enchanté, ravi de vous rencontrer
-どうぞよろしく:dōzo yoroshiku:heureux de faire votre connaissance
+どうぞよろしく:dozoyoroshiku:heureux de faire votre connaissance
 #
 !Leçon institut n°1 - Pays
 ?o
@@ -147,14 +152,14 @@
 イギリス:igirisu:Angleterre
 #
 !Leçon institut n°3 - Salutations
-?o
-おはよう:ohayō:bonjour (le matin)
-おはようございます:ohayō gozaimasu:bonjour formel (le matin)
+?x
+おはよう:ohayo:bonjour (matin)
+おはようございます:ohayogozaimasu:bonjour formel (matin)
 こんにちは:konnichiha:bonjour (après-midi)
 こんばんは:konbanha:bonsoir
 おやすみ:oyasumi:bonne nuit
-おやすみなさい:oyasumi nasai:bonne nuit formel
-さようなら:sayōnara:au revoir
+おやすみなさい:oyasuminasai:bonne nuit formel
+さようなら:sayonara:au revoir
 #
 !Divers
 ?o

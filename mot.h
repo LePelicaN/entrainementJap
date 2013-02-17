@@ -25,13 +25,13 @@ public:
    Mot( const string & inHiraKata, const string & inRoumaji, const vector< string > * inFr = NULL );
    virtual ~Mot();
 
-   const string           & getHiraKata() { return hiraKata_; }
-   const string           & getRoumaji()  { return roumaji_; }
-   const vector< string > & getFr()       { return fr_; }
+   const string           & getHiraKata() const { return hiraKata_; }
+   const string           & getRoumaji()  const { return roumaji_; }
+   const vector< string > & getFr()       const { return fr_; }
 
-   const bool               isHiraKata()  { return isHiraKata_; }
+   const bool               isHiraKata()  const { return isHiraKata_; }
 
-   string   getStringFr();
+   string   getStringFr() const;
    bool     verifFr( vector< string > & inFr );
 };
 
