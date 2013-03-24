@@ -1,6 +1,8 @@
 #ifndef MOT_H
 #define MOT_H
 
+#include <QtCore/QMetaType>
+
 #include <string>
 #include <vector>
 #include <utility>
@@ -22,6 +24,7 @@ protected:
    bool              isHiraKata_;
 
 public:
+   Mot(){}
    Mot( const string & inHiraKata, const string & inRoumaji, const vector< string > * inFr = NULL );
    virtual ~Mot();
 
@@ -32,7 +35,10 @@ public:
    const bool               isHiraKata()  const { return isHiraKata_; }
 
    string   getStringFr() const;
+   std::string toString() const;
    bool     verifFr( vector< string > & inFr );
 };
+
+Q_DECLARE_METATYPE(Mot)
 
 #endif

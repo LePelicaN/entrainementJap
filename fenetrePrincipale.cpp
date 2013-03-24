@@ -603,7 +603,7 @@ void FenetrePrincipale::sauvegardeFichier()
 
             for ( iteVecteur = mapMotGroupe_[ *iteOrdre ].begin(); iteVecteur != mapMotGroupe_[ *iteOrdre ].end(); ++iteVecteur )
             {
-               file << (*iteVecteur).getHiraKata() << ":" << (*iteVecteur).getRoumaji() << ":" << (*iteVecteur).getStringFr() << std::endl;
+               file << iteVecteur->toString() << std::endl;
             }
          }
       }

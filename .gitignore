@@ -2,11 +2,14 @@
 /Makefile*
 /release*
 /debug*
+/regex
 /setup*
 /src/config_version.hpp
 *.dll
 *.exe
 *.user
-listeJap2.txt
 *.Debug
 *.Release
+listeJap - Copie.txt
+listeJap2.txt
+nouveauxMots.txt

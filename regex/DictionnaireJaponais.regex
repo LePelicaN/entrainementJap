@@ -23,7 +23,7 @@
 --sous-expr
    avantListe=.*<ul class='resultsList'>[[:space:]]*
    apresListe=</ul>.*
-   avantMot=<li>
+   avantMot=<li[^>]*>
    apresMot=.*?</li>[[:space:]]*
    avantKana=.*?<span class='kana'>
    apresKana=<

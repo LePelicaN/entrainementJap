@@ -4,6 +4,8 @@
 #include <QtGui/QGridLayout>
 #include <QtGui/QStandardItem>
 
+#include <fstream>
+
 namespace
 {
 
@@ -18,8 +20,8 @@ QTreeView * ChercheurMotWidget::createTree( const std::vector< Mot > & inMots )
 {
    QTreeView * outTreeView = new QTreeView();
 
-   QStandardItemModel * model = new QStandardItemModel();
-   QStandardItem * racine = model->invisibleRootItem();
+   model_ = new QStandardItemModel();
+   QStandardItem * racine = model_->invisibleRootItem();
 
    for ( std::vector< Mot >::const_iterator motCourant = inMots.begin();
          motCourant != inMots.end();
@@ -28,13 +30,17 @@ QTreeView * ChercheurMotWidget::createTree( const std::vector< Mot > & inMots )
       std::string motString = motToString( *motCourant );
       QStandardItem * mot = new QStandardItem( motString.c_str() );
       mot->setEditable( false );
+      mot->setData( QVariant::fromValue( *motCourant ) );
       racine->appendRow( mot );
    }
 
-   outTreeView->setModel( model );
+   outTreeView->setModel( model_ );
    outTreeView->expandAll();
    outTreeView->setHeaderHidden( true );
    outTreeView->setExpandsOnDoubleClick( false );
+
+   connect( outTreeView, SIGNAL( doubleClicked( const QModelIndex & ) ),
+            this,        SLOT(   doubleClicked( const QModelIndex & ) ) );
 
    return outTreeView;
 }
@@ -59,4 +65,13 @@ ChercheurMotWidget::ChercheurMotWidget( const std::vector< Mot > & inMots, QWidg
    mainLayout->addWidget( createTree( inMots ), ligne++, 0 );
    //mainLayout->addWidget( createButtons(), ligne++, 0 );
    setLayout( mainLayout );
+}
+
+void ChercheurMotWidget::doubleClicked( const QModelIndex & index )
+{
+   QStandardItem * item = model_->itemFromIndex( index );
+   Mot mot = item->data().value<Mot>(); ;
+   std::ofstream oFile( "nouveauxMots.txt", std::ios_base::app );
+   oFile << mot.toString() << std::endl;
+   accept();
 }

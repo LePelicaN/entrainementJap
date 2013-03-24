@@ -26,6 +26,11 @@ string Mot::getStringFr() const
    return out;
 }
 
+std::string Mot::toString() const
+{
+    return getHiraKata() + ":" + getRoumaji() + ":" + getStringFr();
+}
+
 bool Mot::verifFr( vector< string > & inFr )
 {
    bool out;
