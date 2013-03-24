@@ -50,7 +50,7 @@
 
 	Katakana
 !voyelles
-?x
+?o
 ア:a;イ:i;ウ:u;エ:e;オ:o
 !k
 ?o
@@ -71,16 +71,16 @@
 ?o
 マ:ma;ミ:mi;ム:mu;メ:me;モ:mo
 !y
-?o
+?x
 ヤ:ya;ユ:yu;ヨ:yo
 !r
-?o
+?x
 ラ:ra;リ:ri;ル:ru;レ:re;ロ:ro
 !w
-?o
+?x
 ワ:wa;ヲ:wo
 !-n
-?o
+?x
 ン:n
 !g
 ?o
@@ -102,7 +102,7 @@
 #
 #
 !Leçon institut n°0 - Divers
-?x
+?o
 よむ:yomu:lire
 きく:kiku:écouter
 みる:miru:regarder
@@ -114,12 +114,9 @@
 しつもん:shitsumon:question
 します:shimasu:faire
 こたえる:kotaeru:répondre
-???:hanasu:parler
-??:rei:exemple
-?????:shukudai:devoirs, exercices
 #
 !Leçon institut n°1 - Presentation
-?x
+?o
 わたし:watashi:je
 の:no:de, ma, mon
 は:wa:marqueur de sujet
@@ -139,7 +136,7 @@
 おなじ:onaji:pareil
 あいさつ:aisatsu:salutation
 はじめまして:hajimemashite:enchanté, ravi de vous rencontrer
-どうぞよろしく:dozoyoroshiku:heureux de faire votre connaissance
+どうぞよろしく:douzoyoroshiku:heureux de faire votre connaissance
 #
 !Leçon institut n°1 - Pays
 ?o
@@ -151,15 +148,289 @@
 イタリア:itaria:Italie
 イギリス:igirisu:Angleterre
 #
+!Leçon institut n°2 - Métiers
+?o
+しごと:shigoto:métier
+せんせい:sensei:professeur
+がくせい:gakusei:étudiant
+かいしゃ:kaisha:entreprise
+かいしゃいん:kaishain:employé
+ぎんこう:ginkou:banque
+ぎんこういん:ginkouin:employé de banque
+いしゃ:isha:médecin
+べんご:bengo:plaidoyer
+べんごし:bengoshi:avocat
+かいけい:kaikei:comptabilité, compte
+かいけいし:kaikeishi:expert-comptable
+けんちく:kenchiku:architecture, construction
+けんちくか:kenchikuka:architecte
+ぎ:gi:sacrifice
+ぎし:gishi:ingénieur
+がか:gaka:peintre
+けいかん:keikan:policier
+すちゅわあです:suchuwaadesu:hotesse de l'air
+かんごし:kangoshi:infirmier
+かんごふ:kangofu:infirmière
+#
+!Leçon institut n°2 - Divers
+?o
+げんき:genki:forme, santé
+あさひ:asahi:soleil levant
+あさね:asane:grasse matinée
+ひる:hiru:midi
+よる:yoru:nuit
+ばん:ban:soir, soirée
+が:ga:mais
+でも:demo:mais, malgré, même
+いま:ima:maintenant
+まえ:mae:avant, devant
+-ません:-masen:négation
+でした:deshita:passé de être
+#
 !Leçon institut n°3 - Salutations
-?x
-おはよう:ohayo:bonjour (matin)
-おはようございます:ohayogozaimasu:bonjour formel (matin)
+?o
+おはよう:ohayou:bonjour (matin)
+おはようございます:ohayougozaimasu:bonjour formel (matin)
 こんにちは:konnichiha:bonjour (après-midi)
 こんばんは:konbanha:bonsoir
 おやすみ:oyasumi:bonne nuit
 おやすみなさい:oyasuminasai:bonne nuit formel
-さようなら:sayonara:au revoir
+さようなら:sayounara:au revoir
+#
+!Leçon institut n°3 - Pronoms demonstratifs
+?o
+これ:kore:ceci
+それ:sore:cela
+あれ:are:cela là-bas
+どれ:dore:lequel
+ここ:koko:ici
+そこ:soko:là
+あそこ:asoko:là-bas
+どこ:doko:où
+なん:nan:que, quel, quoi
+と:to:et
+で:de:dans, à
+も:mo:aussi
+ありがとう:arigatou:merci
+ありがとうございます:arigatougozaimasu:merci beaucoup
+#
+!Leçon institut n°3 - Vocabulaire divers 1/2
+?o
+ぼうし:boushi:chapeau
+めがね:megane:lunettes
+ねくたい:nekutai:cravate
+はんかち:hankachi:mouchoir
+すうつ:suutsu:costume
+すうつけいす:suutsukeisu:valise
+かさ:kasa:parapluie
+ずぼん:zubon:pantalon
+くつ:kutsu:chaussure
+すとっきんぐ:sutokkingu:bas
+すかあと:sukaato:jupe
+とけい:tokei:montre
+たばこ:tabako:tabac
+ほん:hon:livre
+#
+!Leçon institut n°3 - Vocabulaire divers 2/2
+?o
+べると:beruto:ceinture
+せいたあ:seitaa:pull
+ぶろうち:burouchi:broche
+りぼん:ribon:ruban
+でんわ:denwa:téléphone
+くるま:kuruma:voiture
+はな:hana:fleur
+かぎ:kagi:clé
+しんぶん:shinbun:journal
+まど:mado:fenêtre
+じしょ:jisho:dictionnaire
+ぜいかん:zeikan:douane
+したぎ:shitagi:sous-vêtement
+ういすきい:uisukii:whisky
+さんぐらす:sangurasu:lunettes de soleil
+あける:akeru:ouvrir
+#
+!Leçon institut n°3 - Chiffres
+?o
+いち:ichi:un
+に:ni:deux
+さん:san:trois
+し:shi:quatre
+よん:yon:quatre
+ご:go:cinq
+ろく:roku:six
+ななつ:nanatsu:sept
+なな:nana:sept
+しち:shichi:sept
+はち:hachi:huit
+きゅう:kyuu:neuf
+く:ku:neuf
+じゅう:juu:dix
+ひゃく:hyaku:cent
+せん:sen:mille
+まん:man:dix mille, innombrables, tout
+れい:rei:zéro
+ぜろ:zero:zéro
+#
+!Leçon institut n°3 - Divers
+?o
+ふくしゅう:fukushuu:révision
+はじめる:hajimeru:commencer
+かんぺき:kanpeki:parfait
+あとで:atode:plus tard
+みらい:mirai:futur
+ぺん:pen:stylo
+ぱん:pan:pain
+すばらしい:subarashii:superbe
+いい:ii:bien, bon
+かんたん:kantan:facile
+むずかしい:muzukashii:difficile
+#
+!Leçon institut n°4 - Temps
+?o
+じかん:jikan:temps
+じ:ji:heure
+ふん:fun:minute
+じゅっぷん:juppun:10min
+-じ:-ji:heure (compteur)
+-ふん:-fun:minute (compteur)
+よじ:yoji:4h
+くじ:kuji:9h
+なんじ:nanji:quelle heure
+はん:han:demi
+ごぜん:gozen:matin
+ごご:gogo:après-midi
+れいじ:reiji:minuit
+きのう:kinou:hier
+から:kara:à partir de
+まで:made:jusqu'à
+まえ:mae:avant, devant
+しょうご:shougo:midi
+よる:yoru:nuit
+#
+!Leçon institut n°4 - Divers
+?o
+おとこのひと:otokonohito:homme
+ひと:hito:personne
+おとこ:otoko:masculin
+おんな:onna:féminin
+すみません:sumimasen:excusez-moi
+さようなら:sayounara:au revoir
+ゆうびんきょく:yuubinkyoku:bureau de poste
+しごと:shigoto:métier
+がっこう:gakkou:école
+ほてる:hoteru:hôtel
+ひるやすみ:hiruyasumi:pause déjeuner
+れすとらん:resutoran:restaurant
+でぱあと:depaato:grand magasin
+すうぱあまあけっと:suupaamaaketto:supermarché
+びょういん:byouin:hôpital
+きっさてん:kissaten:café
+としょかん:toshokan:bibliothèque
+えいが:eiga:film
+えいがかん:eigakan:salle de cinéma
+げきじょう:gekijou:théâtre
+きょうかい:kyoukai:église
+こうえん:kouen:parc
+どうぶつえん:doubutsuen:zoo
+はいしゃ:haisha:dentiste
+ばなな:banana:banane
+てがみ:tegami:lettre
+#
+!Leçon institut n°5 - Jour de la semaine
+?o
+げつようび:getsuyoubi:lundi
+かようび:kayoubi:mardi
+すいようび:suiyoubi:mercredi
+もくようび:mokuyoubi:jeudi
+きんようび:kinyoubi:vendredi
+どようび:doyoubi:samedi
+にちようび:nichiyoubi:dimanche
+げつよう:getsuyou:lundi
+かよう:kayou:mardi
+すいよう:suiyou:mercredi
+もくよう:mokuyou:jeudi
+きんよう:kinyou:vendredi
+どよう:doyou:samedi
+にちよう:nichiyou:dimanche
+おととい:ototoi:avant hier
+きのう:kinou:hier
+きょう:kyou:aujourd'hui
+あした:ashita:demain
+あさって:asatte:après demain
+#
+!Leçon institut n°5 - Divers
+?o
+ばん:ban:numéro
+たとえば:tatoeba:par exemple
+か:ka:ou
+ばんごう:bangou:numéro
+じゅうしょ:juusho:adresse
+めいし:meishi:carte de visite
+ふぁっくす:fakkusu:fax
+また:mata:encore
+しつれいします:shitsureishimasu:excusez-moi
+まって:matte:attends
+かいぎ:kaigi:réunion
+ひ:hi:jour
+ひしょ:hisho:secrétaire
+#
+!Leçon institut n°6 - Verbes
+?x
+どうし:doushi:verbe
+します:shimasu:faire
+はなす:hanasu:parler
+たべる:taberu:manger
+のむ:nomu:boire
+よむ:yomu:lire
+きく:kiku:écouter
+みる:miru:regarder
+かく:kaku:écrire
+わかる:wakaru:comprendre
+こたえる:kotaeru:répondre
+いく:iku:aller
+くる:kuru:venir
+かえる:kaeru:retourner
+おきる:okiru:se lever
+おわる:owaru:finir
+#
+!Leçon institut n°6 - Divers
+?x
+しゅうまつ:shuumatsu:week-end
+コーヒー:kohi:café
+てがみ:tegami:lettre
+ほん:hon:livre
+テレビ:terebi:télévision
+ぱん:pan:pain
+おんがく:ongaku:musique
+すうぱあまあけっと:suupaamaaketto:supermarché
+を:o:marqueur de COD
+に:ni:marqueur de temps
+へ:e:marqueur de lieu
+ばしょ:basho:lieu
+でんわ:denwa:téléphone
+てにす:tenisu:tennis
+うんてん:unten:conduite
+くるま:kuruma:voiture
+しごと:shigoto:métier
+しゅくだい:shukudai:exercice
+べんきょう:benkyou:études
+-や:-ya:boutique spécialisée dans
+かいしゃ:kaisha:entreprise
+まい:mai:chaque
+あさ:asa:matin
+にち:nichi:jour
+ばん:ban:soir, soirée
+ごはん:gohan:repas
+あさごはん:asagohan:petit déjeuner
+ひるごはん:hirugohan:déjeuner
+ばんごはん:bangohan:diner
+まいあさ:maiasa:tous les matins
+まいにち:mainichi:tous les jours
+まいばん:maiban:tous les soirs
+そして:soshite:ensuite
+うち:uchi:maison
+ごろ:goro:environ, vers
 #
 !Divers
 ?o
